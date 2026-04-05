@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "5db42fb9-1b8e-4150-b0b7-8854f0fb8848",
+    "text": "Key Points of Arrays in Java An array is a fixed-size collection of elements of the same data type. Array access is fast because elements are accessed using index values. Array elements are stored in contiguous memory locations. Array size is decided at creation time and cannot be changed later. Arrays use zero-based indexing (first element at index `0`). Arrays in Java are objects, not primitive variables. The `length` property gives the size of the array (not a method). Arrays are created using the `new` keyword. Java automatically initializes array elements with default values. Primitive arrays store values directly, whereas object arrays store references to objects.",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 2,
+    "keywords": [
+      "primitive arrays",
+      "java array fixed",
+      "arrays store references",
+      "java objects primitive",
+      "array size decided",
+      "size array method",
+      "points arrays java",
+      "later arrays use",
+      "arrays store values",
+      "index arrays java"
+    ]
+  },
+  {
+    "chunk_id": "a9ba8e77-3a32-4fb0-afa7-0326c348a5d3",
+    "text": "SET 1: PRIMITIVE ARRAY (int, double, char, etc.) Declare Array <type> < arrayName >[]; e.g. int x[]; Allocate Memory to array < arrayName > = new <type>[<size>]; e.g. x = new int[100]; Define and allocate memory together <type> < arrayName >[] = new <type>[<size>]; e.g. int x[] = new int[100]; Initialize Array: Option 1 < arrayName >[<subscript>] = <value>; e.g. x[5] = 100; Using loop: For (int i = 0; i < 100; i ++) x[ i ] = <value>; Initialize Array: Option 2 <type> < arrayName >[] = { <list of values> }; e.g. int x[] = {12, 13, 14}; Size of array int i = x.length ; SET 2: OBJECT ARRAY (class type) Declare Array < className > < arrayName >[]; e.g. Book books[]; Allocate Memory to array (references only) < arrayName > = new < className >[<size>]; e.g. books = new Book[3]; Define and allocate memory together < className > < arrayName >[] = new < className >[<size>]; e.g. Book books[] = new Book[3]; Initialize Array: Option 1 (IMPORTANT object creation required) < arrayName >[<index>] = new < className >(); books[0] = new Book(); books[1] = new Book(); Assign values to object fields: books[0].title = \"Java\"; books[1].title = \"OOP\"; Initialize Array: Option 2 (array + objects together) < className > < arrayName >[] = { new < className >(), new < className >() }; e.g.Book books[] = { new Book(), new Book() }; Size of array int i = books.length ;",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 3,
+    "keywords": [
+      "book initialize array",
+      "arrayname book",
+      "declare array type",
+      "size array",
+      "option arrayname subscript",
+      "memory array",
+      "set primitive array",
+      "array int books",
+      "option type arrayname",
+      "option array objects"
+    ]
+  },
+  {
+    "chunk_id": "f86f51be-efd3-4e17-9ecf-40f7c86545b6",
+    "text": "Write a Java program that: Declares an integer array Allocates memory for the array (size 5) Initializes the array elements with any integer values Prints all array elements using a loop Create a class named IntArrayDemo . Define the main method as the program entry point. Inside main, declare an integer array variable. Allocate memory to the array for 5 integer elements. Initialize the array elements with integer values using a loop. Use a loop to access each array element. Print each element to the console. Declare Int Array : int[] x ; Allocate memory: x = new int[5]; Initialize Array: for (int i =0; i < x.length;i ++) X[ i ]= i + 1; mportantYears = new int[] {800, 1066, 1492,};",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 4,
+    "keywords": [
+      "array elements integer",
+      "int initialize array",
+      "allocate memory array",
+      "declare int array",
+      "array int length",
+      "array allocates memory",
+      "array variable allocate",
+      "array integer elements",
+      "memory array",
+      "integer array variable"
+    ]
+  },
+  {
+    "chunk_id": "36e1b3b4-f55f-4603-a056-b9c58f766935",
+    "text": "class IntArrayDemo { public static void main(String[] args ) { int[] x = new int[5]; for (int i = 0; i < x.length ; i ++) { x[ i ] = i + 1; } for (int i = 0; i < x.length ; i ++) { System.out.println (x[ i ]); } } }",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 5,
+    "keywords": [
+      "main string args",
+      "int new int",
+      "new int int",
+      "int int length",
+      "string args",
+      "length println",
+      "println",
+      "intarraydemo public static",
+      "class intarraydemo public",
+      "class intarraydemo"
+    ]
+  },
+  {
+    "chunk_id": "5cb3eca5-c62a-4140-a542-2192ae74b3be",
+    "text": "Primitive Array Specific Points Primitive arrays store actual values (int, double, char, etc.). Only one `new` operation is required. Default values: `int` `0` `double` `0.0` ` boolean ` `false` e.g int[] a = new int[3]; Object Array Specific Points Object arrays store references to objects, not the objects themselves. Creating an object array does not create objects automatically. Each object must be created separately using `new`. Default value for object references is `null`. Accessing an object before creation causes ` NullPointerException `. Example: Book[] books = new Book[2]; books[0] = new Book();",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 6,
+    "keywords": [
+      "primitive array specific",
+      "new int object",
+      "creation causes nullpointerexception",
+      "object array does",
+      "nullpointerexception example book",
+      "arrays store actual",
+      "points object arrays",
+      "arrays store references",
+      "array does create",
+      "points primitive arrays"
+    ]
+  },
+  {
+    "chunk_id": "e9cfe071-dc03-4b13-858d-e8a1e35f1cc2",
+    "text": "class TestArray { String title ; public static void main(String args []) { TestArray [] myBooks = new TestArray [2]; int x = 0; myBooks [0].title = \"b1\"; myBooks [1].title = \"b2\"; while(x < 2) { System. out .println ( \"book \"+ myBooks [x].title ); x++ ; } } class Hobbits { String name ; public static void main(String args []) { Hobbits[] h = new Hobbits[2] ; int z = 0 ; while (z < 2) { z = z + 1 ; h[z] = new Hobbits() ; h[z].name =\"H\" + z ; System. out .println (\"name \"+ h[z].name ); } } }",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 7,
+    "keywords": [
+      "testarray mybooks new",
+      "mybooks new testarray",
+      "title b2 println",
+      "title class hobbits",
+      "hobbits string public",
+      "println book",
+      "println",
+      "string args testarray",
+      "class testarray",
+      "string args hobbits"
+    ]
+  },
+  {
+    "chunk_id": "7f7542d0-4928-49fa-ab81-465c6b463c5e",
+    "text": "Program Requirements Object Array Declares an object array Allocates memory for the array (size 5) Creates objects inside the array Prints all object values using a loop Low Level Design Object Array Create a class named Book Add one data member title Create a class named ObjectArrayDemo Define the main method Inside main, declare an object array Allocate memory for 5 objects Create objects using a loop Assign values to object fields Use a loop to print object values Class Creation class Book { String title; } Declare Object Array Book[] books; Allocate Memory books = new Book[5]; Initialize Array, Assign and Read Values for (int i = 0; i < books.length ; i ++) { books[ i ] = new Book(); books[ i ].title = \"Book \" + ( i + 1); } for (int i = 0; i < books.length ; i ++) { System.out.println (books[ i ].title); }",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 9,
+    "keywords": [
+      "allocate memory books",
+      "declare object array",
+      "array create",
+      "book books allocate",
+      "design object array",
+      "books allocate",
+      "object array",
+      "books allocate memory",
+      "array create class",
+      "array book books"
+    ]
+  },
+  {
+    "chunk_id": "f438bab3-6012-4df5-9056-5b7235963b15",
+    "text": "class Book { String title; } class ObjectArrayDemo { public static void main(String[] args ) { Book[] books; books = new Book[5]; for (int i = 0; i < books.length ; i ++) { books[ i ] = new Book(); books[ i ].title = \"Book \" + ( i + 1); } for (int i = 0; i < books.length ; i ++) { System.out.println (books[ i ].title); } } }",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 10,
+    "keywords": [
+      "book books books",
+      "println",
+      "book books title",
+      "length println books",
+      "string title class",
+      "string args book",
+      "objectarraydemo public",
+      "objectarraydemo public static",
+      "class objectarraydemo public",
+      "class objectarraydemo"
+    ]
+  },
+  {
+    "chunk_id": "fcc0329f-7ef5-4d15-a918-b976723a1d6a",
+    "text": "Abstract class Bike{ Abstract void run(); } Class Honda extends Bike{ void run() { System.out.println ( run safely ); } Public static void main() { Bike obj = new Honda() ; obj.run () ; }",
+    "source_file": "1.4_1044_Array.pptx",
+    "page_number": 12,
+    "keywords": [
+      "abstract void",
+      "extends bike",
+      "main bike obj",
+      "println run",
+      "class honda",
+      "extends bike void",
+      "void run println",
+      "run class honda",
+      "run class",
+      "abstract class"
+    ]
+  }
+]

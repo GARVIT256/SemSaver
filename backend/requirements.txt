@@ -1,0 +1,33 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-dotenv>=1.0.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+
+# ── Document extraction ───────────────────────────────────────────────────────
+PyMuPDF>=1.24.0
+python-pptx>=0.6.23
+
+# ── Vector store ──────────────────────────────────────────────────────────────
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+
+# ── Graph store ───────────────────────────────────────────────────────────────
+neo4j>=5.19.0
+
+# ── Local embedding model (no API calls) ─────────────────────────────────────
+sentence-transformers>=3.0.0
+einops
+
+# ── Local keyword extraction (no API calls) ───────────────────────────────────
+keybert>=0.8.0
+keyphrase-vectorizers>=0.0.10
+
+# ── LLM clients (generation only) ────────────────────────────────────────────
+groq>=1.0.0
+google-genai>=1.0.0
+
+# ── Security ──────────────────────────────────────────────────────────────────
+slowapi>=0.1.9
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
