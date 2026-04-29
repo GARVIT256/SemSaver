@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemSaver | AI Study Assistant</title>
+    <meta name="description" content="SemSaver is an AI-powered study assistant designed for B.Tech students to efficiently learn from their course materials.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Upload Area -->
+        <aside class="sidebar glass-panel">
+            <div class="logo-area">
+                <h1>SemSaver</h1>
+                <p>Your AI Study Assistant</p>
+            </div>
+            
+            <div class="upload-section">
+                <h3>Knowledge Base</h3>
+                <p class="subtitle">Upload PDFs or PPTs</p>
+                
+                <div id="drop-zone" class="drop-zone">
+                    <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <p>Drag & Drop files here</p>
+                    <span>or <button id="browse-btn" class="text-btn">browse files</button></span>
+                    <input type="file" id="file-input" multiple accept=".pdf,.pptx" hidden>
+                </div>
+
+                <div id="upload-status" class="upload-status hidden">
+                    <div class="spinner"></div>
+                    <span id="upload-status-text">Uploading...</span>
+                </div>
+
+                <div id="files-list" class="files-list">
+                    <!-- Uploaded files will be listed here -->
+                </div>
+            </div>
+            
+            <div class="footer-info">
+                <p>Local Graph RAG Enabled</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container glass-panel">
+            <header class="chat-header">
+                <h2>Study Chat</h2>
+                <span class="status-indicator online">System Ready</span>
+            </header>
+
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system-msg">
+                    <div class="avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c1.68 0 3.282.426 4.75 1.191a.75.75 0 001-.707V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
+                        </svg>
+                    </div>
+                    <div class="msg-content">
+                        <p>Welcome to SemSaver! Upload your course materials on the left, and start asking questions.</p>
+                    </div>
+                </div>
+                <!-- Dynamic messages go here -->
+            </div>
+
+            <div class="chat-input-area">
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Ask about your syllabus..." autocomplete="off">
+                    <button type="submit" id="send-btn" class="send-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

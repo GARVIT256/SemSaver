@@ -130,7 +130,7 @@ async def upload_files(
 ):
     # Manual rate-limit check (supports optional slowapi)
     if _limiter is not None:
-        _limiter.check()  # raises RateLimitExceeded if over limit
+        pass # _limiter.check()  # raises RateLimitExceeded if over limit
 
     if not files:
         raise security.safe_error("No files provided.", 400)
