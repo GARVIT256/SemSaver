@@ -160,5 +160,2770 @@
       "run class",
       "abstract class"
     ]
+  },
+  {
+    "chunk_id": "b379d611-e1eb-4425-afda-ee02200a239e",
+    "text": "Python #1 in many popularity lists; huge in AI, data science, scripting, automation. ( Pluralsight ) JavaScript Essential for web development; still one of the most used languages worldwide. ( Pluralsight ) Java Classic enterprise and Android language; OOP foundation language ( C++ Widely used in systems, games, performance-critical apps. ( Pluralsight ) C# Popular in enterprise and game dev (Unity). ( Pluralsight ) TypeScript JavaScript with types; growing fast in web/enterprise. ( Pluralsight ) SQL Standard language for databases. ( Pluralsight ) C Still foundational for OS, embedded systems. ( Wikipedia ) Go (Golang) Cloud and modern backend services. ( Pluralsight ) PHP / Swift / Kotlin These are often in top-10 lists depending on the ranking, with PHP strong for web backends and Swift/Kotlin strong for mobile. ( Pluralsight )",
+    "source_file": "0476f9a10cfd4db3828b178547b375a0_0.0_1044_Intro.pptx",
+    "page_number": 1,
+    "keywords": [
+      "used languages worldwide",
+      "language oop foundation",
+      "development used languages",
+      "pluralsight sql standard",
+      "backend services pluralsight",
+      "oop foundation language",
+      "pluralsight javascript",
+      "language widely used",
+      "pluralsight javascript essential",
+      "apps pluralsight popular"
+    ]
+  },
+  {
+    "chunk_id": "977f52ba-430d-4b14-b303-2e4d4303b9dc",
+    "text": "In 1995 Oak was renamed as Java",
+    "source_file": "0476f9a10cfd4db3828b178547b375a0_0.0_1044_Intro.pptx",
+    "page_number": 2,
+    "keywords": []
+  },
+  {
+    "chunk_id": "6e361f63-4560-4c6d-9c9c-294899a4deb0",
+    "text": "Attendance Rules No Manual Attendance 94 Students Proxy 3 ve attendance for person doing proxy Lab & Theory Lab Teacher for B7 B8",
+    "source_file": "0476f9a10cfd4db3828b178547b375a0_0.0_1044_Intro.pptx",
+    "page_number": 7,
+    "keywords": [
+      "teacher b7",
+      "attendance person doing",
+      "lab teacher b7",
+      "teacher b7 b8",
+      "ve attendance",
+      "proxy lab",
+      "doing proxy lab",
+      "attendance rules",
+      "94 students proxy",
+      "attendance rules manual"
+    ]
+  },
+  {
+    "chunk_id": "3dcc3531-04f5-45f4-936d-732044f1b6df",
+    "text": "Homework Write Once Run Anywhere ----- How ??",
+    "source_file": "0476f9a10cfd4db3828b178547b375a0_0.0_1044_Intro.pptx",
+    "page_number": 8,
+    "keywords": []
+  },
+  {
+    "chunk_id": "4e8bd101-674f-4822-abb7-8e77d9399fa7",
+    "text": "if (condition) { // runs if condition is true } else { // runs if condition is false } Condition must be Boolean int age = 20; if (age >= 18) { System.out.println (\"Eligible to vote\"); } else { System.out.println (\"Not eligible to vote\"); }",
+    "source_file": "93373e62ee3f4db4a8e3a0f0df0012e4_0_1044_Lab.pptx",
+    "page_number": 6,
+    "keywords": [
+      "condition runs condition",
+      "boolean int",
+      "runs condition false",
+      "condition true",
+      "18 println eligible",
+      "eligible vote",
+      "vote println",
+      "boolean int age",
+      "condition false condition",
+      "vote println eligible"
+    ]
+  },
+  {
+    "chunk_id": "5df32ee6-0f26-4b02-89d9-094892285aa0",
+    "text": "args.length .length gives the number of elements in the array Type: int Arrays in Java know their own size args [0] = \"Rahul\" args [1] = \"Sharma\" args.length = 2",
+    "source_file": "93373e62ee3f4db4a8e3a0f0df0012e4_0_1044_Lab.pptx",
+    "page_number": 7,
+    "keywords": [
+      "java know",
+      "type int arrays",
+      "args rahul args",
+      "elements array",
+      "array type",
+      "length gives number",
+      "sharma args length",
+      "size args rahul",
+      "number elements array",
+      "java know size"
+    ]
+  },
+  {
+    "chunk_id": "3d7f0b93-eaca-4b7e-9416-f8193d0ee50e",
+    "text": "public class HelloName { public static void main(String[] args ) { if ( args.length == 0) { System.out.println (\"Please enter your name\"); } else { System.out.println (\"Hello \" + args [0]); } } }",
+    "source_file": "93373e62ee3f4db4a8e3a0f0df0012e4_0_1044_Lab.pptx",
+    "page_number": 8,
+    "keywords": [
+      "hello args",
+      "main string",
+      "string args args",
+      "helloname public static",
+      "args length println",
+      "void main string",
+      "length println enter",
+      "class helloname public",
+      "class helloname",
+      "println enter println"
+    ]
+  },
+  {
+    "chunk_id": "4bbfc7b3-20c4-4988-b4ad-32609059c459",
+    "text": "Declaration & Assignment Statements int a , b = 0 ; int a = 0 , int b = 0 ; a = 123 ; b = 45 ; int c = a+ b ; System.out.println ( the sum is + c) ;",
+    "source_file": "c1db63031070402791d9b116933f33ef_1.0_1044_Basics.pptx",
+    "page_number": 3,
+    "keywords": [
+      "123 45",
+      "int int",
+      "sum",
+      "println",
+      "int int int",
+      "123 45 int",
+      "declaration assignment",
+      "assignment statements",
+      "declaration assignment statements",
+      "println sum"
+    ]
+  },
+  {
+    "chunk_id": "2759660f-c1c4-42c5-80b7-656fc208210c",
+    "text": "Integers Range Overflow & Underflow int myMinIntValue = Integer.MIN_VALUE ; int myMaxIntValue = Integer.MAX_VALUE ; Will this compile Int myMinIntValue = ( Integer.MAX_VALUE + 1); Int myMinIntValue = (2147486347+ 1); Int myMinIntValue =2_147_483_647 ;",
+    "source_file": "c1db63031070402791d9b116933f33ef_1.0_1044_Basics.pptx",
+    "page_number": 4,
+    "keywords": [
+      "max_value compile",
+      "integer min_value int",
+      "max_value int",
+      "compile int myminintvalue",
+      "min_value int mymaxintvalue",
+      "integer max_value",
+      "myminintvalue integer",
+      "integers range overflow",
+      "underflow int myminintvalue",
+      "int myminintvalue integer"
+    ]
+  },
+  {
+    "chunk_id": "1f000715-8303-4a6e-a709-81d96ba760e8",
+    "text": "DATA TYPE , Width ( in bits), Min Value, Max Value Byte , Short, Int , Long System.out.println (\"Integer value range (\" + Integer.MIN_VALUE + \" to \" + Integer.MAX_VALUE + \")\") ; System.out.println (\"Byte value range (\" + Byte.MIN_VALUE + \" to \" + Byte.MAX_VALUE + \")\") ; System.out.println (\"Short value range (\" + Short.MIN_VALUE + \" to \" + Short.MAX_VALUE + \")\") ; System.out.println (\"Long value range (\" + Long.MIN_VALUE + \" to \" + Long.MAX_VALUE + \")\") ; System.out.println (\"Integer size (\" + Integer.SIZE ) ; System.out.println (\"Byte size (\" + Byte.SIZE ) ; System.out.println (\"Short size (\" + Short.SIZE ) ; System.out.println (\"Long size (\" + Long.SIZE ) ;",
+    "source_file": "c1db63031070402791d9b116933f33ef_1.0_1044_Basics.pptx",
+    "page_number": 5,
+    "keywords": [
+      "value byte",
+      "min_value byte max_value",
+      "range byte min_value",
+      "println long value",
+      "byte short int",
+      "range byte",
+      "long println integer",
+      "max value byte",
+      "println integer size",
+      "integer size println"
+    ]
+  },
+  {
+    "chunk_id": "7ea86e03-7d53-417c-b728-ff79ee22ce02",
+    "text": "byte myNewByteValue = ( myMinByteValue / 2 ); byte myNewByteValue = ( -128 / 2) ; byte myNewByteValue = (byte) ( myMinByteValue / 2 );",
+    "source_file": "c1db63031070402791d9b116933f33ef_1.0_1044_Basics.pptx",
+    "page_number": 6,
+    "keywords": [
+      "128",
+      "mynewbytevalue",
+      "myminbytevalue",
+      "mynewbytevalue 128",
+      "mynewbytevalue myminbytevalue",
+      "128 byte",
+      "byte",
+      "byte myminbytevalue",
+      "byte mynewbytevalue myminbytevalue",
+      "byte mynewbytevalue byte"
+    ]
+  },
+  {
+    "chunk_id": "8e2f1182-2442-44e1-ae39-65f07c49dde5",
+    "text": "Recap: In Java, int is the default data type used in arithmetic operations, even when working with byte, short, or long. To explicitly treat a value as long, we must append L to the literal (e.g., 100L). Java automatically applies overflow and underflow when a value exceeds the minimum or maximum range of a data type. In expressions, smaller data types (byte, short) are promoted to int, which can cause compilation errors during assignment. For example, short s = s / 2; results in an error because the expression evaluates to int. To resolve this, we must use explicit type casting (e.g., short s = (short)(s / 2);).",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 1,
+    "keywords": [
+      "arithmetic operations",
+      "int cause compilation",
+      "recap java int",
+      "assignment example short",
+      "casting short short",
+      "data type expressions",
+      "literal 100l java",
+      "type expressions smaller",
+      "java int default",
+      "byte short long"
+    ]
+  },
+  {
+    "chunk_id": "fb4c7eda-166d-4248-a53a-0419e9d03896",
+    "text": "Floating-Point Types: float & double In Java, double is the default floating-point data type . Any decimal value like 5.5 is treated as a double by default. To store a value in a float, we must explicitly add F or f float f = 5.5F; In arithmetic expressions, float values are promoted to double , just like byte and short are promoted to int. Because of this, assignments such as: float f = 5.0 / 2; cause a compile-time error , since the result is a double. To fix this, we must either: use F literals, or apply explicit type casting : float f = (float)(5.0 / 2); Floating-point numbers do not store exact decimal values . This can lead to rounding errors : System.out.println (0.1 + 0.2); // 0.30000000000000004 Because of higher precision, double is preferred in most real-world calculations.",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 2,
+    "keywords": [
+      "arithmetic expressions float",
+      "default floating point",
+      "int assignments float",
+      "floating point data",
+      "rounding errors",
+      "float cause compile",
+      "double java double",
+      "java double",
+      "precision double preferred",
+      "rounding errors println"
+    ]
+  },
+  {
+    "chunk_id": "2ae48446-35dd-44b6-b42f-2678d6d7b24d",
+    "text": "float a = 5.5; - Fix this float f = 5 / 2; -- Why is result not 2.5. Fix it float f = 1F / 3F; double d = 1.0 / 3.0; System.out.println (f); System.out.println (d); Which is safer for scientific calculations Why does Java promote Double and int ? Int result = 5 ; Result = result 5.5 ; Result = (int) (result 5.5) ;",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 3,
+    "keywords": [
+      "1f 3f double",
+      "result result int",
+      "java promote double",
+      "double println",
+      "safer scientific calculations",
+      "scientific calculations does",
+      "int int result",
+      "scientific calculations",
+      "fix float result",
+      "double int int"
+    ]
+  },
+  {
+    "chunk_id": "0c28a873-0393-4463-98d6-8f8dfe88d332",
+    "text": "`char` in Java is 2 bytes (16 bits) Java uses Unicode (UTF-16), not ASCII A `char` stores a single character, enclosed in single quotes char c = 'A'; Internally, a `char` is stored as a numeric Unicode value Because it is numeric, `char` participates in arithmetic Java promotes `char` to `int` in expressions char c = 'A'; System.out.println (c); // A System.out.println ((int)c); // 65",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 4,
+    "keywords": [
+      "numeric char participates",
+      "ascii char stores",
+      "int expressions char",
+      "char internally char",
+      "16 ascii char",
+      "java bytes",
+      "expressions char println",
+      "java bytes 16",
+      "char println println",
+      "java uses unicode"
+    ]
+  },
+  {
+    "chunk_id": "b46767a9-5571-4a4e-9f12-718413c69fc7",
+    "text": "` boolean ` represents logical truth It can have only two values: true or false ``` Size is JVM-dependent (not defined in bytes) ` boolean ` cannot be cast to or from numbers Used mainly in: Conditions Loops Logical expressions boolean isJavaFun = true; boolean result = (5 > 3); System.out.println (result); if (true) { System.out.println (\"This always runs\"); } ``` > ` boolean ` is not data it is a decision",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 5,
+    "keywords": [
+      "true println",
+      "boolean isjavafun",
+      "bytes boolean",
+      "logical expressions boolean",
+      "boolean data decision",
+      "boolean represents",
+      "runs boolean",
+      "runs boolean data",
+      "expressions boolean isjavafun",
+      "println runs boolean"
+    ]
+  },
+  {
+    "chunk_id": "31ab2479-bfd4-4f81-bfa9-9020f2ae5f74",
+    "text": "char c = 'A'; System.out.println (c); System.out.println ((int)c); char heart = '\\u2764'; System.out.println (heart); Compile or no : char c = 65; char c = 'A' + 1; char c = (char)('A' + 1); boolean a = true; boolean b = false; System.out.println (a && b); System.out.println (a || b); System.out.println (!a); int age = 18; boolean canVote = age >= 18; if ( canVote ) { System.out.println (\"Eligible to vote\"); }",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 6,
+    "keywords": [
+      "false println",
+      "canvote age",
+      "canvote age 18",
+      "compile char 65",
+      "int char",
+      "println int age",
+      "boolean false println",
+      "boolean canvote",
+      "char char boolean",
+      "println eligible vote"
+    ]
+  },
+  {
+    "chunk_id": "647559a8-4898-4340-a067-9fbcdc164d51",
+    "text": "`String` is a class, not a primitive data type. But Java treats it specially (syntax + operators) String is Immutable String s = \"Java\"; - created in string constant pool s = s + \" OOP\"; new String()` Creates a New Object String a = \"Java\"; String b = new String(\"Java\"); String a = \"Test\"; String b = \"Test\"; String c = new String(\"Test\"); System.out.println (a == b); System.out.println (a == c); System.out.println ( a.equals (c));",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 7,
+    "keywords": [
+      "string test println",
+      "type java treats",
+      "string immutable string",
+      "java",
+      "string constant pool",
+      "java treats specially",
+      "string class",
+      "data type java",
+      "immutable string java",
+      "string class primitive"
+    ]
+  },
+  {
+    "chunk_id": "88560a13-7b34-4b42-bbb9-5199f5616782",
+    "text": "`+` Operator Works with String & Numbers If any operand is a String, `+` means concatenation Evaluation is left to right System.out.println (10 + 20 + \"Java\"); // 30Java System.out.println (\"Java\" + 10 + 20); // Java1020 ``` Once a String appears, everything becomes a String Try + with char String.out.println ( A + B) String.out.println ( + A + B)",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 8,
+    "keywords": [
+      "println",
+      "20 java",
+      "java 10 20",
+      "string numbers operand",
+      "20 java 30java",
+      "char string println",
+      "string println string",
+      "println string println",
+      "10 20 java",
+      "java1020 string appears"
+    ]
+  },
+  {
+    "chunk_id": "28fd1062-8acd-4bae-940c-9b8ea6b840b0",
+    "text": "Polymorphism refers to a programming language's ability to process objects depending on their class.",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 9,
+    "keywords": [
+      "language ability",
+      "ability process",
+      "class",
+      "objects",
+      "objects depending",
+      "process objects depending",
+      "refers programming",
+      "programming language ability",
+      "polymorphism",
+      "polymorphism refers"
+    ]
+  },
+  {
+    "chunk_id": "76ec8e1b-8211-485a-b860-22b247707a2a",
+    "text": "Operators",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 10,
+    "keywords": []
+  },
+  {
+    "chunk_id": "1c3993a3-5621-4dac-958d-f7a7629e217b",
+    "text": "Comments: Single-Line Comment // This is a single-line comment Multi-Line Comment /* This is a multi-line comment */ Documentation Comment (Intro Only) /** * This is a documentation comment */ (Used later with JavaDocs )",
+    "source_file": "cb5128bbb6964b61ab5274cc16e025fe_1.1_1044_Basics.pptx",
+    "page_number": 12,
+    "keywords": [
+      "comment single",
+      "comment multi",
+      "comments single",
+      "line comment",
+      "comment intro",
+      "line comment multi",
+      "documentation comment used",
+      "intro documentation comment",
+      "comment documentation",
+      "line comment documentation"
+    ]
+  },
+  {
+    "chunk_id": "b7c24882-1102-468e-9322-daf725df25ca",
+    "text": "Java Data Types & Type Promotion Key Takeaways `int` is the default data type for integer arithmetic in Java `byte`, `short`, and `char` are automatically promoted to `int` in expressions Overflow and underflow are allowed silently in Java (no runtime error) Explicit type casting is required when assigning promoted results back to smaller types Floating-Point Types: `float` vs `double` `double` is the default floating-point type in Java Decimal literals like `5.5` are treated as `double` by default `float` values must use `F` or `f` suffix Floating-point arithmetic can produce rounding errors `double` is preferred for precision-critical and scientific calculations Type Promotion Rules (Why Errors Occur) Integer division (`5 / 2`) results in an integer, not a decimal Mixed-type expressions are promoted to the wider type Assignments may fail at compile time due to implicit widening + strict assignment rules Casting is required to make conversions explicit and safe",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 1,
+    "keywords": [
+      "decimal literals like",
+      "java data types",
+      "arithmetic java",
+      "suffix floating point",
+      "type integer",
+      "integer arithmetic java",
+      "decimal mixed type",
+      "types float vs",
+      "arithmetic java byte",
+      "float vs double"
+    ]
+  },
+  {
+    "chunk_id": "5ac9f0fc-068c-47a2-b1ec-2d13bf0b42e1",
+    "text": "`char` in Java `char` is 2 bytes (16-bit) and uses Unicode (UTF-16) Can participate in arithmetic operations Automatically promoted to `int` in expressions Supports Unicode characters using escape sequences (`\\ uXXXX `) ` boolean ` in Java Represents logical decisions, not numeric data Only two values: `true` and `false` Cannot be cast to or from numeric types Commonly used in Conditions Loops Logical expressions `String` in Java `String` is a class, not a primitive Strings are immutable String literals are stored in the String Constant Pool `new String()` always creates a new object `==` compares references, `.equals()` compares content",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 2,
+    "keywords": [
+      "primitive strings",
+      "references equals compares",
+      "logical expressions string",
+      "string literals",
+      "equals compares",
+      "java string class",
+      "java",
+      "char java char",
+      "java char bytes",
+      "uxxxx boolean java"
+    ]
+  },
+  {
+    "chunk_id": "a729de54-52a8-480c-a689-ace70f975744",
+    "text": "`+` Operator Behavior : Works with both numbers and strings If any operand is a String, `+` performs concatenation Expression evaluation happens left to right Once a String appears, the rest of the expression becomes a String Polymorphism (Intro Level) Polymorphism allows different behavior for the same method call Behavior depends on the object type, not reference type Operators Arithmetic Relational Logical Assignment operators Comment types: `//` Single-line /* */Multi-line `/ ** */` Documentation (used by JavaDocs )",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 3,
+    "keywords": [
+      "logical assignment operators",
+      "operand string",
+      "expression string polymorphism",
+      "operators arithmetic relational",
+      "expression evaluation happens",
+      "string performs concatenation",
+      "numbers strings operand",
+      "types single line",
+      "operator behavior",
+      "operators comment types"
+    ]
+  },
+  {
+    "chunk_id": "a140b702-660a-4d8f-a135-ac492f7df412",
+    "text": "public class FirstClass { public static void main(String[] args ) { System. out .println (\"Hello\"); } } JVM looks for an exact method signature. public JVM must access it static JVM doesn t create an object void nothing returned to JVM ; System.exit (0); // 0 = normal termination String[] args command-line input Class can have: Fields Methods Constructor Blocks Nested Classes",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 4,
+    "keywords": [
+      "jvm access",
+      "println hello",
+      "class firstclass",
+      "methods constructor",
+      "class fields methods",
+      "jvm exit normal",
+      "fields methods constructor",
+      "returned jvm exit",
+      "args println hello",
+      "firstclass public static"
+    ]
+  },
+  {
+    "chunk_id": "58280b74-7690-41dd-ada3-968225664496",
+    "text": "Class Circle { double x,y ; //center coordinates Double r ; // radius Double circumference() { return 2*3.14*r } Double area() { return (22/7)r*r ; } Class CircleDemo { public static void main(String[] args ) { Circle c = new Circle() ; c.X = 0.0; c.Y = 0.0; c.r =5.0 ; System.out.println ( circ + c.circumrference ()); System.out.println ( area + c.area ()); }",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 5,
+    "keywords": [
+      "class circledemo public",
+      "class circledemo",
+      "double circumference return",
+      "circumrference println area",
+      "double circumference",
+      "string args circle",
+      "circle new circle",
+      "double radius double",
+      "class circle",
+      "coordinates double radius"
+    ]
+  },
+  {
+    "chunk_id": "6768be81-73d5-4cdd-adb5-7ab5cc75e0d9",
+    "text": "Constructor Class Circle { double x,y ; //center coordinates Double r ; // radius Double circumference() { return 2*3.14*r } Double area() { return (22/7)r*r ; } Circle (double a, double b, double c) { x = a ; y = b ; r = c ; } Constructor can have args Return type is null Method name should be same as class",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 6,
+    "keywords": [
+      "constructor class",
+      "double circumference",
+      "constructor args return",
+      "double constructor args",
+      "return 22 circle",
+      "double circumference return",
+      "double constructor",
+      "coordinates double radius",
+      "circle double center",
+      "class circle"
+    ]
+  },
+  {
+    "chunk_id": "52ee71bf-6c59-48fb-b464-74886112532d",
+    "text": "Constructor Overload Overloading is achieved by: Changing the number of parameters , or Changing the type of parameters class Student { String name; int age; // Constructor 1: No arguments Student() { name = \"Unknown\"; age = 0; } // Constructor 2: One argument Student(String n) { name = n; age = 0; } // Constructor 3: Two arguments Student(String n, int a) { name = n; age = a; } void display() { System.out.println (name + \" \" + age); } public static void main(String[] args ) { Student s1 = new Student(); Student s2 = new Student(\"Rahul\"); Student s3 = new Student(\"Rahul\", 20); s1.display(); s2.display(); s3.display(); } }",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 7,
+    "keywords": [
+      "string args student",
+      "unknown age constructor",
+      "arguments student unknown",
+      "int age constructor",
+      "class student string",
+      "age constructor",
+      "parameters class",
+      "argument student string",
+      "constructor overload overloading",
+      "constructor overload"
+    ]
+  },
+  {
+    "chunk_id": "6362c490-7529-4d12-b752-a858c3702f79",
+    "text": "Design and develop a Java program to model a Bank Account using constructor overloading . The program should allow creation of bank account objects with different initial information depending on what data is available at the time of account creation. The program should support the following scenarios: Create a bank account without providing any details , where default values are assigned. Create a bank account by providing account holder name only . Create a bank account by providing account holder name and initial balance . Each scenario must use a different constructor of the same class.",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 8,
+    "keywords": [
+      "account providing account",
+      "providing account holder",
+      "account holder initial",
+      "program model bank",
+      "account objects",
+      "scenarios create bank",
+      "create bank",
+      "assigned create bank",
+      "model bank account",
+      "account using constructor"
+    ]
+  },
+  {
+    "chunk_id": "7252bf83-6d2f-4c9a-8632-e177b5b26932",
+    "text": "Create a class named BankAccount Declare instance variables: Account holder name Account balance Constructor Design Constructor 1 (No arguments) Assign default values to account holder name and balance Constructor 2 (One argument) Accept account holder name Initialize name with provided value Set balance to default value Constructor 3 (Two arguments) Accept account holder name and initial balance Initialize both values using parameters",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 9,
+    "keywords": [
+      "balance default value",
+      "holder balance constructor",
+      "initialize values using",
+      "initial balance initialize",
+      "variables account",
+      "balance constructor",
+      "named bankaccount",
+      "variables account holder",
+      "bankaccount declare",
+      "class named bankaccount"
+    ]
+  },
+  {
+    "chunk_id": "46769b6e-70c1-4617-8cb7-1e046992f49a",
+    "text": "This variable class BankAccount { String accountHolder ; double balance; BankAccount (String accountHolder , double balance) { this.accountHolder = accountHolder ; this.balance = balance; } }",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 10,
+    "keywords": [
+      "accountholder accountholder",
+      "variable",
+      "accountholder double",
+      "accountholder accountholder balance",
+      "double balance bankaccount",
+      "bankaccount string",
+      "accountholder balance balance",
+      "class bankaccount",
+      "string accountholder double",
+      "variable class"
+    ]
+  },
+  {
+    "chunk_id": "95745d04-5fe7-490d-9551-a1449421c541",
+    "text": "class BankAccount { String name; double balance; // Constructor 1 BankAccount () { this(\"Not Provided\", 0.0); // calls Constructor 3 } // Constructor 2 BankAccount (String name) { this(name, 0.0); // calls Constructor 3 } // Constructor 3 (centralized initialization) BankAccount (String name, double balance) { this.name = name; this.balance = balance; } void display() { System.out.println (name + \" \" + balance); } } This() can be used in constructor only Should be first line",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 11,
+    "keywords": [
+      "used constructor",
+      "constructor constructor centralized",
+      "initialization bankaccount string",
+      "provided calls constructor",
+      "balance constructor",
+      "balance constructor bankaccount",
+      "class bankaccount string",
+      "double balance constructor",
+      "string calls constructor",
+      "constructor line"
+    ]
+  },
+  {
+    "chunk_id": "10e2a0ae-70ee-4396-abc4-cdd9ff47f69d",
+    "text": "C:\\OOP\\Code\\HelloWorld\\out\\production\\HelloWorld>\"C:\\Program Files\\Java\\jdk-21\\bin\\javap.exe\" -c SecondClass Compiled from \"SecondClass.java\" class SecondClass { SecondClass (); Code: 0: aload_0 1: invokespecial #1 // Method java/lang/Object.\"< init >\":()V 4: return public static void main( java.lang.String []); Code: 0: new #7 // class Calculator 3: dup 4: invokespecial #9 // Method Calculator.\"< init >\":()V 7: astore_1 8: aload_1 9: ldc2_w #10 // double 20.0d 12: putfield #12 // Field Calculator.i:D 15: getstatic #16 // Field java/lang/ System.out:Ljava /io/ PrintStream ; 18: aload_1 19: getfield #12 // Field Calculator.i:D 22: aload_1 23: getfield #22 // Field Calculator.x:D 26: invokedynamic #25, 0 // InvokeDynamic #0:makeConcatWithConstants:(DD)Ljava/lang/String; 31: invokevirtual #29 // Method java/io/ PrintStream.println :( Ljava /lang/String;)V 34: return } javap (Java disassembler) is used to inspect .class files and view method signatures and bytecode executed by the JVM.",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 12,
+    "keywords": [
+      "field java lang",
+      "secondclass compiled secondclass",
+      "secondclass code aload_0",
+      "calculator init astore_1",
+      "invokespecial method java",
+      "method java",
+      "method java lang",
+      "method calculator init",
+      "exe secondclass",
+      "exe secondclass compiled"
+    ]
+  },
+  {
+    "chunk_id": "2b1ed1c3-9ba4-4075-9b16-5c6bedf1830a",
+    "text": "args.length .length gives the number of elements in the array Type: int Arrays in Java know their own size args [0] = \"Rahul\" args [1] = \"Sharma\" args.length = 2 Concept : Argument Passing",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 13,
+    "keywords": [
+      "args rahul",
+      "type int arrays",
+      "elements array type",
+      "length gives number",
+      "number elements array",
+      "args rahul args",
+      "sharma args length",
+      "java know size",
+      "args length concept",
+      "arrays java"
+    ]
+  },
+  {
+    "chunk_id": "ee2a43bf-39af-4d91-a13e-88b87d8cba45",
+    "text": "public class HelloMe { public static void main(String[] args ) { System. out .println (\"Hello \" + args [0]); } } Command Line Arguments are passed at runtime Stored as an array of Strings \"C:\\Program Files\\Java\\jdk-21\\bin\\java.exe\" HelloMe Deepika Passing Arguments in Command Line",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 14,
+    "keywords": [
+      "java jdk",
+      "println hello",
+      "string args",
+      "bin java exe",
+      "arguments passed runtime",
+      "program files java",
+      "java exe",
+      "passing arguments command",
+      "main string args",
+      "args command line"
+    ]
+  },
+  {
+    "chunk_id": "f031589e-e961-4956-96b9-11ceeb00778b",
+    "text": "if (condition) { // runs if condition is true } else { // runs if condition is false } Condition must be Boolean int age = 20; if (age >= 18) { System.out.println (\"Eligible to vote\"); } else { System.out.println (\"Not eligible to vote\"); } Concept : If Else Condition",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 15,
+    "keywords": [
+      "runs condition false",
+      "eligible vote",
+      "condition runs condition",
+      "vote concept condition",
+      "println eligible",
+      "vote println",
+      "boolean int age",
+      "eligible vote concept",
+      "condition false condition",
+      "false condition boolean"
+    ]
+  },
+  {
+    "chunk_id": "1c842ccd-011a-455a-b76d-ac53ae4ebc80",
+    "text": "public class HelloName { public static void main(String[] args ) { if ( args.length == 0) { System.out.println (\"Error: Please provide your name\"); } else { System.out.println (\"Hello \" + args [0]); } } } Check Args in Hello World",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 16,
+    "keywords": [
+      "println error",
+      "void main string",
+      "args check args",
+      "println error provide",
+      "args hello world",
+      "args length println",
+      "string args args",
+      "helloname public static",
+      "class helloname",
+      "class helloname public"
+    ]
+  },
+  {
+    "chunk_id": "50d270d6-fcfe-4c23-934f-9f33d1c134d0",
+    "text": "public class FinalClass { public static void main(String[] args ) { if ( args.length == 0) { System. out .println (\"Error: Please provide your name\"); } else if ( args.length == 1) { System. out .println (\"Hello \" + args [0]); } else if ( args.length == 2) { System. out .println (\"Hello \" + args [0] + \" \" + args [1]); } } } Multiple Args in Command Line",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 17,
+    "keywords": [
+      "println",
+      "provide args length",
+      "println hello",
+      "provide args",
+      "error provide args",
+      "args command line",
+      "args length println",
+      "multiple args",
+      "main string args",
+      "multiple args command"
+    ]
+  },
+  {
+    "chunk_id": "3382244a-b9fc-4c5f-9d44-53a7de83e044",
+    "text": "if (condition1) { // statements } else if (condition2) { // statements } else if (condition3) { // statements } else { // default statements }",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 18,
+    "keywords": [
+      "default",
+      "condition1",
+      "condition2",
+      "condition3",
+      "statements default",
+      "statements",
+      "default statements",
+      "statements default statements",
+      "condition1 statements condition2",
+      "condition3 statements"
+    ]
+  },
+  {
+    "chunk_id": "032c6261-822e-43e3-b59e-794a7843b7b7",
+    "text": "1. Scanner Package: ` java.util ` Reads input token by token Easy and beginner-friendly Example methods: ` nextInt ()`, ` nextLine ()`, ` nextDouble ()` 2. BufferedReader Package: `java.io` Used with ` InputStreamReader ` Reads input line by line Faster than Scanner Requires manual type conversion 3. Command Line Arguments Uses `String[] args ` in `main` Input passed while running the program No runtime input 4. Console Class Package: `java.io` Reads input securely (e.g., passwords) Not supported in some IDEs",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 19,
+    "keywords": [
+      "java io",
+      "input passed running",
+      "scanner requires",
+      "input token token",
+      "bufferedreader package java",
+      "java io reads",
+      "input token",
+      "reads input securely",
+      "java util",
+      "scanner package"
+    ]
+  },
+  {
+    "chunk_id": "0ef75e2f-aafc-49e6-85de-1a64f8f37444",
+    "text": "Scanner sc = new Scanner(System. in ); System. out .print (\"Enter your name: \"); String name = sc.nextLine (); Scanner is a built-in Java class used to read input from different sources such as keyboard input, files, and strings It belongs to the package java.util When used with System.in, it reads standard input (keyboard input)",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 20,
+    "keywords": [
+      "string sc nextline",
+      "read input different",
+      "scanner built",
+      "enter string",
+      "new scanner",
+      "read input",
+      "enter string sc",
+      "print enter string",
+      "nextline scanner built",
+      "scanner built java"
+    ]
+  },
+  {
+    "chunk_id": "cfbc7f64-98d9-4c9c-8e5a-d472f9e15653",
+    "text": "Box b1 = new Box() ; Box b2 = b1 ; b1 = null ; Method Type name (parameter list)",
+    "source_file": "030a7edda6794a99b0b927cbce23d827_1.2_1044_Class.pptx",
+    "page_number": 21,
+    "keywords": [
+      "box b1 new",
+      "box b2",
+      "b1 null method",
+      "parameter",
+      "box box",
+      "new box box",
+      "null method",
+      "method type",
+      "parameter list",
+      "type parameter list"
+    ]
+  },
+  {
+    "chunk_id": "9c201ba3-9a72-42cd-aa53-c0984c7d58d7",
+    "text": "public class FirstClass { public static void main(String[] args ) { System. out .println (\"Hello\"); } } JVM looks for an exact method signature. public JVM must access it static JVM doesn t create an object void nothing returned to JVM ; System.exit (0); // 0 = normal termination String[] args command-line input Class can have: Fields Methods Constructor Blocks Nested Classes",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 1,
+    "keywords": [
+      "jvm access",
+      "println hello",
+      "class firstclass",
+      "methods constructor",
+      "class fields methods",
+      "jvm exit normal",
+      "fields methods constructor",
+      "returned jvm exit",
+      "args println hello",
+      "firstclass public static"
+    ]
+  },
+  {
+    "chunk_id": "1a9520bd-0914-49ad-9ecd-ec5e70d73d82",
+    "text": "Class Circle { double x,y ; //center coordinates Double r ; // radius Double circumference() { return 2*3.14*r } Double area() { return (22/7)r*r ; } Class CircleDemo { public static void main(String[] args ) { Circle c = new Circle() ; c.X = 0.0; c.Y = 0.0; c.r =5.0 ; System.out.println ( circ + c.circumrference ()); System.out.println ( area + c.area ()); }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 2,
+    "keywords": [
+      "class circledemo public",
+      "class circledemo",
+      "double circumference return",
+      "circumrference println area",
+      "double circumference",
+      "string args circle",
+      "circle new circle",
+      "double radius double",
+      "class circle",
+      "coordinates double radius"
+    ]
+  },
+  {
+    "chunk_id": "2a26c20a-cef1-4462-baa0-64ecf89fb9a3",
+    "text": "Constructor Class Circle { double x,y ; //center coordinates Double r ; // radius Double circumference() { return 2*3.14*r } Double area() { return (22/7)r*r ; } Circle (double a, double b, double c) { x = a ; y = b ; r = c ; } Constructor can have args Return type is null Method name should be same as class",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 3,
+    "keywords": [
+      "constructor class",
+      "double circumference",
+      "constructor args return",
+      "double constructor args",
+      "return 22 circle",
+      "double circumference return",
+      "double constructor",
+      "coordinates double radius",
+      "circle double center",
+      "class circle"
+    ]
+  },
+  {
+    "chunk_id": "a266ffa1-c568-4ce3-a73f-8a7d082ccda9",
+    "text": "Constructor Overload Overloading is achieved by: Changing the number of parameters , or Changing the type of parameters class Student { String name; int age; // Constructor 1: No arguments Student() { name = \"Unknown\"; age = 0; } // Constructor 2: One argument Student(String n) { name = n; age = 0; } // Constructor 3: Two arguments Student(String n, int a) { name = n; age = a; } void display() { System.out.println (name + \" \" + age); } public static void main(String[] args ) { Student s1 = new Student(); Student s2 = new Student(\"Rahul\"); Student s3 = new Student(\"Rahul\", 20); s1.display(); s2.display(); s3.display(); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 4,
+    "keywords": [
+      "string args student",
+      "unknown age constructor",
+      "arguments student unknown",
+      "int age constructor",
+      "class student string",
+      "age constructor",
+      "parameters class",
+      "argument student string",
+      "constructor overload overloading",
+      "constructor overload"
+    ]
+  },
+  {
+    "chunk_id": "5b65db17-573c-4072-adc5-3a06a615d4f1",
+    "text": "Design and develop a Java program to model a Bank Account using constructor overloading . The program should allow creation of bank account objects with different initial information depending on what data is available at the time of account creation. The program should support the following scenarios: Create a bank account without providing any details , where default values are assigned. Create a bank account by providing account holder name only . Create a bank account by providing account holder name and initial balance . Each scenario must use a different constructor of the same class.",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 5,
+    "keywords": [
+      "account providing account",
+      "providing account holder",
+      "account holder initial",
+      "program model bank",
+      "account objects",
+      "scenarios create bank",
+      "create bank",
+      "assigned create bank",
+      "model bank account",
+      "account using constructor"
+    ]
+  },
+  {
+    "chunk_id": "04627c06-3828-4ed0-a2e8-72ed74fadc78",
+    "text": "Create a class named BankAccount Declare instance variables: Account holder name Account balance Constructor Design Constructor 1 (No arguments) Assign default values to account holder name and balance Constructor 2 (One argument) Accept account holder name Initialize name with provided value Set balance to default value Constructor 3 (Two arguments) Accept account holder name and initial balance Initialize both values using parameters",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 6,
+    "keywords": [
+      "balance default value",
+      "holder balance constructor",
+      "initialize values using",
+      "initial balance initialize",
+      "variables account",
+      "balance constructor",
+      "named bankaccount",
+      "variables account holder",
+      "bankaccount declare",
+      "class named bankaccount"
+    ]
+  },
+  {
+    "chunk_id": "16cf6b73-39fb-4841-ae7c-62f3a0be58f1",
+    "text": "This variable class BankAccount { String accountHolder ; double balance; BankAccount (String accountHolder , double balance) { this.accountHolder = accountHolder ; this.balance = balance; } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 7,
+    "keywords": [
+      "accountholder accountholder",
+      "variable",
+      "accountholder double",
+      "accountholder accountholder balance",
+      "double balance bankaccount",
+      "bankaccount string",
+      "accountholder balance balance",
+      "class bankaccount",
+      "string accountholder double",
+      "variable class"
+    ]
+  },
+  {
+    "chunk_id": "bb55473a-4826-46cf-b33a-fb6c0508ce0c",
+    "text": "class BankAccount { String name; double balance; // Constructor 1 BankAccount () { this(\"Not Provided\", 0.0); // calls Constructor 3 } // Constructor 2 BankAccount (String name) { this(name, 0.0); // calls Constructor 3 } // Constructor 3 (centralized initialization) BankAccount (String name, double balance) { this.name = name; this.balance = balance; } void display() { System.out.println (name + \" \" + balance); } } This() can be used in constructor only Should be first line",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 8,
+    "keywords": [
+      "used constructor",
+      "constructor constructor centralized",
+      "initialization bankaccount string",
+      "provided calls constructor",
+      "balance constructor",
+      "balance constructor bankaccount",
+      "class bankaccount string",
+      "double balance constructor",
+      "string calls constructor",
+      "constructor line"
+    ]
+  },
+  {
+    "chunk_id": "48fed76d-91ce-4c71-a61b-d0445afc4950",
+    "text": "C:\\OOP\\Code\\HelloWorld\\out\\production\\HelloWorld>\"C:\\Program Files\\Java\\jdk-21\\bin\\javap.exe\" -c SecondClass Compiled from \"SecondClass.java\" class SecondClass { SecondClass (); Code: 0: aload_0 1: invokespecial #1 // Method java/lang/Object.\"< init >\":()V 4: return public static void main( java.lang.String []); Code: 0: new #7 // class Calculator 3: dup 4: invokespecial #9 // Method Calculator.\"< init >\":()V 7: astore_1 8: aload_1 9: ldc2_w #10 // double 20.0d 12: putfield #12 // Field Calculator.i:D 15: getstatic #16 // Field java/lang/ System.out:Ljava /io/ PrintStream ; 18: aload_1 19: getfield #12 // Field Calculator.i:D 22: aload_1 23: getfield #22 // Field Calculator.x:D 26: invokedynamic #25, 0 // InvokeDynamic #0:makeConcatWithConstants:(DD)Ljava/lang/String; 31: invokevirtual #29 // Method java/io/ PrintStream.println :( Ljava /lang/String;)V 34: return } javap (Java disassembler) is used to inspect .class files and view method signatures and bytecode executed by the JVM.",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 9,
+    "keywords": [
+      "field java lang",
+      "secondclass compiled secondclass",
+      "secondclass code aload_0",
+      "calculator init astore_1",
+      "invokespecial method java",
+      "method java",
+      "method java lang",
+      "method calculator init",
+      "exe secondclass",
+      "exe secondclass compiled"
+    ]
+  },
+  {
+    "chunk_id": "fbbf4e6f-d1c7-4698-8292-7a9b67d1ceb9",
+    "text": "args.length .length gives the number of elements in the array Type: int Arrays in Java know their own size args [0] = \"Rahul\" args [1] = \"Sharma\" args.length = 2 Concept : Argument Passing",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 10,
+    "keywords": [
+      "args rahul",
+      "type int arrays",
+      "elements array type",
+      "length gives number",
+      "number elements array",
+      "args rahul args",
+      "sharma args length",
+      "java know size",
+      "args length concept",
+      "arrays java"
+    ]
+  },
+  {
+    "chunk_id": "c3d61b75-9ff2-4eb1-a7b2-10aacbd4fb4b",
+    "text": "public class HelloMe { public static void main(String[] args ) { System. out .println (\"Hello \" + args [0]); } } Command Line Arguments are passed at runtime Stored as an array of Strings \"C:\\Program Files\\Java\\jdk-21\\bin\\java.exe\" HelloMe Deepika Passing Arguments in Command Line",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 11,
+    "keywords": [
+      "java jdk",
+      "println hello",
+      "string args",
+      "bin java exe",
+      "arguments passed runtime",
+      "program files java",
+      "java exe",
+      "passing arguments command",
+      "main string args",
+      "args command line"
+    ]
+  },
+  {
+    "chunk_id": "b59e49aa-f991-434d-b07a-7bd129219637",
+    "text": "if (condition) { // runs if condition is true } else { // runs if condition is false } Condition must be Boolean int age = 20; if (age >= 18) { System.out.println (\"Eligible to vote\"); } else { System.out.println (\"Not eligible to vote\"); } Concept : If Else Condition",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 12,
+    "keywords": [
+      "runs condition false",
+      "eligible vote",
+      "condition runs condition",
+      "vote concept condition",
+      "println eligible",
+      "vote println",
+      "boolean int age",
+      "eligible vote concept",
+      "condition false condition",
+      "false condition boolean"
+    ]
+  },
+  {
+    "chunk_id": "4646925b-948d-429b-b218-08835347fd3e",
+    "text": "public class HelloName { public static void main(String[] args ) { if ( args.length == 0) { System.out.println (\"Error: Please provide your name\"); } else { System.out.println (\"Hello \" + args [0]); } } } Check Args in Hello World",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 13,
+    "keywords": [
+      "println error",
+      "void main string",
+      "args check args",
+      "println error provide",
+      "args hello world",
+      "args length println",
+      "string args args",
+      "helloname public static",
+      "class helloname",
+      "class helloname public"
+    ]
+  },
+  {
+    "chunk_id": "c24a1568-d7b4-4184-b3c0-7bb18dc1ca60",
+    "text": "public class FinalClass { public static void main(String[] args ) { if ( args.length == 0) { System. out .println (\"Error: Please provide your name\"); } else if ( args.length == 1) { System. out .println (\"Hello \" + args [0]); } else if ( args.length == 2) { System. out .println (\"Hello \" + args [0] + \" \" + args [1]); } } } Multiple Args in Command Line",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 14,
+    "keywords": [
+      "println",
+      "provide args length",
+      "println hello",
+      "provide args",
+      "error provide args",
+      "args command line",
+      "args length println",
+      "multiple args",
+      "main string args",
+      "multiple args command"
+    ]
+  },
+  {
+    "chunk_id": "29be0c38-0cfb-4b4c-a82a-2bc5911de1c8",
+    "text": "if (condition1) { // statements } else if (condition2) { // statements } else if (condition3) { // statements } else { // default statements }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 15,
+    "keywords": [
+      "default",
+      "condition1",
+      "condition2",
+      "condition3",
+      "statements default",
+      "statements",
+      "default statements",
+      "statements default statements",
+      "condition1 statements condition2",
+      "condition3 statements"
+    ]
+  },
+  {
+    "chunk_id": "c8334e35-b5d0-4761-9ed4-ded0e25cdee8",
+    "text": "1. Scanner Package: ` java.util ` Reads input token by token Easy and beginner-friendly Example methods: ` nextInt ()`, ` nextLine ()`, ` nextDouble ()` 2. BufferedReader Package: `java.io` Used with ` InputStreamReader ` Reads input line by line Faster than Scanner Requires manual type conversion 3. Command Line Arguments Uses `String[] args ` in `main` Input passed while running the program No runtime input 4. Console Class Package: `java.io` Reads input securely (e.g., passwords) Not supported in some IDEs",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 16,
+    "keywords": [
+      "java io",
+      "input passed running",
+      "scanner requires",
+      "input token token",
+      "bufferedreader package java",
+      "java io reads",
+      "input token",
+      "reads input securely",
+      "java util",
+      "scanner package"
+    ]
+  },
+  {
+    "chunk_id": "037ae344-1175-402f-b162-9b670e72fa29",
+    "text": "Scanner sc = new Scanner(System. in ); System. out .print (\"Enter your name: \"); String name = sc.nextLine (); Scanner is a built-in Java class used to read input from different sources such as keyboard input, files, and strings It belongs to the package java.util When used with System.in, it reads standard input (keyboard input)",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 17,
+    "keywords": [
+      "string sc nextline",
+      "read input different",
+      "scanner built",
+      "enter string",
+      "new scanner",
+      "read input",
+      "enter string sc",
+      "print enter string",
+      "nextline scanner built",
+      "scanner built java"
+    ]
+  },
+  {
+    "chunk_id": "f5816fac-8862-452f-8f3b-bd92d594b7b2",
+    "text": "Static & Instance / Member Variables",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 18,
+    "keywords": []
+  },
+  {
+    "chunk_id": "b27d9a3f-7ae5-4428-8adc-e3b9d5279df6",
+    "text": "Getter ( getX ) and Setter ( setX ) methods are public methods used to read and update private instance variables. Naming convention: getVariableName () returns the value, and setVariableName (value) updates it (camelCase, starts with get / set). They support encapsulation by hiding direct access to class data. Setters allow validation and business rules before modifying values. Getters provide controlled, read-only access to internal state. They improve code maintainability and flexibility without changing external code. Widely used in real-world applications like banking, user profiles, and configuration systems. Form the backbone of JavaBeans, frameworks, and APIs (Spring, Hibernate, etc.).",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 19,
+    "keywords": [
+      "naming convention getvariablename",
+      "private instance variables",
+      "javabeans frameworks",
+      "methods used read",
+      "modifying values getters",
+      "public methods used",
+      "data setters",
+      "setter setx",
+      "getters provide controlled",
+      "getx setter setx"
+    ]
+  },
+  {
+    "chunk_id": "05807d25-37ea-4912-b3c1-138ec0204d61",
+    "text": "class BankAccount { // STATIC VARIABLE (shared by all accounts) static String bankName = \"State Bank of India\"; // PRIVATE INSTANCE VARIABLES (unique per account) private int accountNumber ; private double balance; // SETTER METHODS (to initialize/update instance variables) public void setAccountNumber (int accNo ) { accountNumber = accNo ; } public void setBalance (double amount) { if (amount >= 0) { balance = amount; } else { System.out.println (\"Invalid balance amount\"); } } // GETTER METHODS (to read instance variables) public int getAccountNumber () { return accountNumber ; } public double getBalance () { return balance; } } public class BankDemo { public static void main(String[] args ) { BankAccount acc1 = new BankAccount (); BankAccount acc2 = new BankAccount (); acc1.setAccountNumber(101); acc1.setBalance(5000); acc2.setAccountNumber(102); acc2.setBalance(10000); System.out.println (\"Bank Name: \" + BankAccount.bankName ); System.out.println (\"Account: \" + acc1.getAccountNumber() + \" Balance: \" + acc1.getBalance()); System.out.println (\"Account: \" + acc2.getAccountNumber() + \" Balance: \" + acc2.getBalance()); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 20,
+    "keywords": [
+      "variable shared",
+      "accounts static string",
+      "variables public void",
+      "println bank bankaccount",
+      "println invalid balance",
+      "double balance setter",
+      "methods read instance",
+      "update instance variables",
+      "balance getter methods",
+      "bankaccount acc1 setaccountnumber"
+    ]
+  },
+  {
+    "chunk_id": "c7c713ba-3651-4431-99ca-73dd92cf0851",
+    "text": "Parse String to int does not work Java converts primitives using casting, strings using wrapper class parsing methods, and invalid parsing is handled using NumberFormatException .",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 22,
+    "keywords": [
+      "casting strings",
+      "work java converts",
+      "primitives using casting",
+      "parse string",
+      "invalid parsing handled",
+      "int does work",
+      "java converts",
+      "methods invalid parsing",
+      "handled using numberformatexception",
+      "numberformatexception"
+    ]
+  },
+  {
+    "chunk_id": "784dec21-4282-4079-ae7f-991c712e18ab",
+    "text": "For loop use with array",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 23,
+    "keywords": []
+  },
+  {
+    "chunk_id": "56e6b92f-b013-4ef2-bf39-ace5afc9b5a8",
+    "text": "java for ( dataType variable : collectionOrArray ) { // statements } Explanation: dataType type of elements in the array or collection variable holds one element at a time collectionOrArray array or collection to iterate over Automatically moves to the next element Best used when only reading values, not modifying indices Example: java int[] nums = {1, 2, 3}; for (int n : nums ) { System.out.println (n); }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 24,
+    "keywords": [
+      "collection iterate automatically",
+      "collection variable holds",
+      "time collectionorarray array",
+      "java int nums",
+      "collection iterate",
+      "indices example java",
+      "java datatype",
+      "java datatype variable",
+      "elements array collection",
+      "datatype variable collectionorarray"
+    ]
+  },
+  {
+    "chunk_id": "4b72f168-c520-43ca-9913-198a47d57cdd",
+    "text": "import java.lang.reflect.Array ; class SimpleStartup { private int[] locationCells ; private int numOfHits = 0 ; public void setLocationCells ( int[] locs) { locationCells = locs ; } public String checkYourself (int guess) { String resultI = \"miss\" ; for (int cell : locationCells ) { if (guess == cell) { resultI =\"hit\" ; numOfHits ++ ; break ; } //end if if ( numOfHits == locationCells.length ){ resultI = \"kill\" ; } //end if } // end for System. out .println ( resultI ) ; return ( resultI ) ; } //end method } //end class public class SimplaStartupTest { public static void main(String[] args ){ SimpleStartup dot = new SimpleStartup () ; int[] locations = {2,3,4} ; int userGuess ; dot.setLocationCells (locations); System. out .println (\"Enter Guess\"); try { userGuess = Integer. parseInt ( args [0]); } catch ( NumberFormatException e) { System. out .println (\"enter valid int\") ; return ; } catch ( ArrayIndexOutOfBoundsException e) { System. out .println (\"enter parameter\") ; return ; } String result = dot.checkYourself ( userGuess ) ; String testResult = \"failed\" ; if ( result.equals (\"hit\")) { testResult = \"passed\" ; } System. out .println ( testResult ); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 25,
+    "keywords": [
+      "private int locationcells",
+      "locationcells guess",
+      "dot setlocationcells",
+      "locationcells private int",
+      "locationcells length resulti",
+      "guess cell resulti",
+      "int locs locationcells",
+      "public void setlocationcells",
+      "void setlocationcells",
+      "setlocationcells locations println"
+    ]
+  },
+  {
+    "chunk_id": "3a060126-9cdf-40d6-8b84-b6f68577cc25",
+    "text": "Access Control & Inheritance",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 26,
+    "keywords": []
+  },
+  {
+    "chunk_id": "8924faa8-f282-4cc8-8c5f-f40167238d29",
+    "text": "class A { void msg () { System . out .println ( \"hello\" ); } } class Outer { private class Inner { void show () { System . out .println ( \"Inside Inner\" ); } } void accessInner () { Inner obj = new Inner(); obj .show (); } } class testAccess { public static void main ( String args []) { // A obj = new A(); // obj.msg(); Outer o = new Outer() ; o .accessInner (); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 28,
+    "keywords": [
+      "obj class testaccess",
+      "class testaccess",
+      "class void msg",
+      "println hello class",
+      "outer private class",
+      "println inside",
+      "accessinner inner",
+      "inner void accessinner",
+      "accessinner inner obj",
+      "println inside inner"
+    ]
+  },
+  {
+    "chunk_id": "16a78daa-1e28-4cfa-86bb-6efbc0ff95c5",
+    "text": "Inheritance is an OOP mechanism where one class (child / subclass) acquires properties and methods of another class (parent / superclass). It is implemented in Java using the extends keyword. It represents an is-a relationship (e.g., Car is a Vehicle). It promotes code reusability by avoiding duplication. The child class can use, extend, or override methods of the parent class. It improves maintainability and extensibility of code. Java supports single inheritance for classes to avoid ambiguity. Access to parent members depends on access modifiers (public, protected, etc.).",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 29,
+    "keywords": [
+      "class child subclass",
+      "child subclass acquires",
+      "class use extend",
+      "extensibility code java",
+      "parent class",
+      "java using extends",
+      "superclass implemented java",
+      "supports single inheritance",
+      "single inheritance",
+      "inheritance oop mechanism"
+    ]
+  },
+  {
+    "chunk_id": "d6edd589-0591-479e-a2ad-2700ff522b15",
+    "text": "class Vehicle { void start() { System.out.println (\"Vehicle is starting\"); } } class Car extends Vehicle { void drive() { start(); // using parent method } } class Vehicle { void start() { System.out.println (\"Vehicle is starting\"); } } class Car extends Vehicle { void playMusic () { System.out.println (\"Playing music\"); } } class Vehicle { void start() { System.out.println (\"Vehicle is starting\"); } } class Car extends Vehicle { @Override void start() { System.out.println (\"Car starts with key ignition\"); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 30,
+    "keywords": [
+      "using parent",
+      "start println vehicle",
+      "class car",
+      "starting class",
+      "void start println",
+      "extends vehicle override",
+      "println car",
+      "method class",
+      "parent method",
+      "using parent method"
+    ]
+  },
+  {
+    "chunk_id": "4483368b-a07d-4de7-9d13-073ceac9dbf8",
+    "text": "Part 1: Parent Class and Main Class 1. Create a class named ` BasicPhone `. Declare a private variable named `brand` of type `String`. Declare a public method named ` makeCall ()` that prints exactly: Making a call using basic phone network with brand + brand 2. Create a class named ` TestPhone ` containing the `main()` method. Create an object of ` BasicPhone `. Call the ` makeCall ()` method.",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 31,
+    "keywords": [
+      "main class create",
+      "create class",
+      "basic phone",
+      "main method create",
+      "brand create class",
+      "testphone containing main",
+      "basicphone declare private",
+      "basic phone network",
+      "class named testphone",
+      "basicphone makecall method"
+    ]
+  },
+  {
+    "chunk_id": "b2d3d370-ab7a-4d1c-809a-8b0f9eaa74bb",
+    "text": "class BasicPhone { private String brand = \"iPhone\" ; protected void makeCall (){ System. out .println (\"Making call from Basic Phone\" +brand); } protected String getBrand (){ return brand ; } } public class TestPhone { public static void main(String[] args ) { BasicPhone myPhone = new BasicPhone () ; myPhone.makeCall (); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 32,
+    "keywords": [
+      "basic phone brand",
+      "basic phone",
+      "public class testphone",
+      "args basicphone",
+      "myphone new basicphone",
+      "class testphone public",
+      "making basic phone",
+      "class testphone",
+      "string args basicphone",
+      "basicphone private string"
+    ]
+  },
+  {
+    "chunk_id": "9901a70f-7e3a-4846-ad2f-5af76d828b17",
+    "text": "Part 2: Child Class with Method Overriding Create a class named SmartPhone that extends BasicPhone . Override the public method makeCall (). The overridden method must print exactly : Making a call using smartphone features No other methods or variables should be added. Part 3 : Update the `Main` class. Declare a reference variable of type ` SmartPhone `. Assign it an object of ` SmartPhone `. Call the ` makeCall ()` method using this reference. Part 4: Demonstrating Polymorphism Using Parent Reference Update the TestPhone class again. Declare a reference variable of type BasicPhone . Assign this reference variable an object of SmartPhone . Call the makeCall () method using the BasicPhone reference.",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 33,
+    "keywords": [
+      "using basicphone reference",
+      "variable object smartphone",
+      "variable type smartphone",
+      "smartphone assign object",
+      "basicphone assign reference",
+      "basicphone override public",
+      "update testphone class",
+      "extends basicphone override",
+      "class named smartphone",
+      "testphone class declare"
+    ]
+  },
+  {
+    "chunk_id": "8ebe1d70-8b7a-4680-b1dc-58317378fd9b",
+    "text": "class BasicPhone { private String brand = \"iPhone\" ; protected void makeCall (){ System. out .println (\"Making call from Basic Phone\" +brand); } protected String getBrand (){ return brand ; } } class SmartPhone extends BasicPhone { @Override protected void makeCall (){ System. out .println (\"Making call from Smart Phone\" + getBrand ()); } } public class TestPhone { public static void main(String[] args ) { BasicPhone myPhone = new BasicPhone () ; myPhone.makeCall (); SmartPhone mySPhone = new SmartPhone (); mySPhone.makeCall (); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 34,
+    "keywords": [
+      "public class testphone",
+      "makecall smartphone mysphone",
+      "string args basicphone",
+      "args basicphone myphone",
+      "smartphone mysphone makecall",
+      "class smartphone extends",
+      "class testphone public",
+      "making basic phone",
+      "extends basicphone override",
+      "basicphone private string"
+    ]
+  },
+  {
+    "chunk_id": "f04930fd-be95-480e-ad7a-27e91ee3b654",
+    "text": "Part 4: Demonstrating Polymorphism Using Parent Reference Update the TestPhone class again. Declare a reference variable of type BasicPhone . Assign this reference variable an object of SmartPhone . Call the makeCall () method using the BasicPhone reference.",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 35,
+    "keywords": [
+      "polymorphism using parent",
+      "basicphone reference",
+      "using basicphone",
+      "demonstrating polymorphism",
+      "object smartphone makecall",
+      "variable object smartphone",
+      "demonstrating polymorphism using",
+      "polymorphism using",
+      "reference update testphone",
+      "update testphone class"
+    ]
+  },
+  {
+    "chunk_id": "02eaedde-7858-473c-9676-7928e0279096",
+    "text": "class BasicPhone { private String brand = \"iPhone\" ; protected void makeCall (){ System. out .println (\"Making call from Basic Phone\" +brand); } protected String getBrand (){ return brand ; } } class SmartPhone extends BasicPhone { @Override protected void makeCall (){ System. out .println (\"Making call from Smart Phone\" + getBrand ()); } } public class TestPhone { public static void main(String[] args ) { BasicPhone myPhone = new BasicPhone () ; myPhone.makeCall (); SmartPhone mySPhone = new SmartPhone (); mySPhone.makeCall (); BasicPhone mySBPhone = new SmartPhone (); mySBPhone.makeCall (); } }",
+    "source_file": "d8113661838e40b69a5cf48b8dbb061c_1.3_1044_Class_Part2.pptx",
+    "page_number": 36,
+    "keywords": [
+      "smartphone mysphone makecall",
+      "string args basicphone",
+      "public class testphone",
+      "making basic phone",
+      "class smartphone extends",
+      "class testphone public",
+      "makecall basicphone mysbphone",
+      "extends basicphone override",
+      "class testphone",
+      "basicphone private string"
+    ]
+  },
+  {
+    "chunk_id": "61a10ec3-e92a-4d16-bdef-73945a966b26",
+    "text": "Key Points of Arrays in Java An array is a fixed-size collection of elements of the same data type. Array access is fast because elements are accessed using index values. Array elements are stored in contiguous memory locations. Array size is decided at creation time and cannot be changed later. Arrays use zero-based indexing (first element at index `0`). Arrays in Java are objects, not primitive variables. The `length` property gives the size of the array (not a method). Arrays are created using the `new` keyword. Java automatically initializes array elements with default values. Primitive arrays store values directly, whereas object arrays store references to objects.",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 2,
+    "keywords": [
+      "primitive arrays",
+      "java array fixed",
+      "arrays store references",
+      "java objects primitive",
+      "array size decided",
+      "size array method",
+      "points arrays java",
+      "later arrays use",
+      "arrays store values",
+      "index arrays java"
+    ]
+  },
+  {
+    "chunk_id": "de86d226-8ead-4e16-aacf-841b322f0ac1",
+    "text": "SET 1: PRIMITIVE ARRAY (int, double, char, etc.) Declare Array <type> < arrayName >[]; e.g. int x[]; Allocate Memory to array < arrayName > = new <type>[<size>]; e.g. x = new int[100]; Define and allocate memory together <type> < arrayName >[] = new <type>[<size>]; e.g. int x[] = new int[100]; Initialize Array: Option 1 < arrayName >[<subscript>] = <value>; e.g. x[5] = 100; Using loop: For (int i = 0; i < 100; i ++) x[ i ] = <value>; Initialize Array: Option 2 <type> < arrayName >[] = { <list of values> }; e.g. int x[] = {12, 13, 14}; Size of array int i = x.length ; SET 2: OBJECT ARRAY (class type) Declare Array < className > < arrayName >[]; e.g. Book books[]; Allocate Memory to array (references only) < arrayName > = new < className >[<size>]; e.g. books = new Book[3]; Define and allocate memory together < className > < arrayName >[] = new < className >[<size>]; e.g. Book books[] = new Book[3]; Initialize Array: Option 1 (IMPORTANT object creation required) < arrayName >[<index>] = new < className >(); books[0] = new Book(); books[1] = new Book(); Assign values to object fields: books[0].title = \"Java\"; books[1].title = \"OOP\"; Initialize Array: Option 2 (array + objects together) < className > < arrayName >[] = { new < className >(), new < className >() }; e.g.Book books[] = { new Book(), new Book() }; Size of array int i = books.length ;",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 3,
+    "keywords": [
+      "book initialize array",
+      "arrayname book",
+      "declare array type",
+      "size array",
+      "option arrayname subscript",
+      "memory array",
+      "set primitive array",
+      "array int books",
+      "option type arrayname",
+      "option array objects"
+    ]
+  },
+  {
+    "chunk_id": "82c767d6-45ad-40df-9d13-71511d1c8e8c",
+    "text": "Write a Java program that: Declares an integer array Allocates memory for the array (size 5) Initializes the array elements with any integer values Prints all array elements using a loop Create a class named IntArrayDemo . Define the main method as the program entry point. Inside main, declare an integer array variable. Allocate memory to the array for 5 integer elements. Initialize the array elements with integer values using a loop. Use a loop to access each array element. Print each element to the console. Declare Int Array : int[] x ; Allocate memory: x = new int[5]; Initialize Array: for (int i =0; i < x.length;i ++) X[ i ]= i + 1; mportantYears = new int[] {800, 1066, 1492,};",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 4,
+    "keywords": [
+      "array elements integer",
+      "int initialize array",
+      "allocate memory array",
+      "declare int array",
+      "array int length",
+      "array allocates memory",
+      "array variable allocate",
+      "array integer elements",
+      "memory array",
+      "integer array variable"
+    ]
+  },
+  {
+    "chunk_id": "f802b211-256e-4b4f-a99b-99f7092ffca0",
+    "text": "class IntArrayDemo { public static void main(String[] args ) { int[] x = new int[5]; for (int i = 0; i < x.length ; i ++) { x[ i ] = i + 1; } for (int i = 0; i < x.length ; i ++) { System.out.println (x[ i ]); } } }",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 5,
+    "keywords": [
+      "main string args",
+      "int new int",
+      "new int int",
+      "int int length",
+      "string args",
+      "length println",
+      "println",
+      "intarraydemo public static",
+      "class intarraydemo public",
+      "class intarraydemo"
+    ]
+  },
+  {
+    "chunk_id": "b2a07fb4-600b-4337-9c71-4ef11e326fcf",
+    "text": "Primitive Array Specific Points Primitive arrays store actual values (int, double, char, etc.). Only one `new` operation is required. Default values: `int` `0` `double` `0.0` ` boolean ` `false` e.g int[] a = new int[3]; Object Array Specific Points Object arrays store references to objects, not the objects themselves. Creating an object array does not create objects automatically. Each object must be created separately using `new`. Default value for object references is `null`. Accessing an object before creation causes ` NullPointerException `. Example: Book[] books = new Book[2]; books[0] = new Book();",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 6,
+    "keywords": [
+      "primitive array specific",
+      "new int object",
+      "creation causes nullpointerexception",
+      "object array does",
+      "nullpointerexception example book",
+      "arrays store actual",
+      "points object arrays",
+      "arrays store references",
+      "array does create",
+      "points primitive arrays"
+    ]
+  },
+  {
+    "chunk_id": "de52938e-f7d1-4add-9f77-f8bef50f0641",
+    "text": "class TestArray { String title ; public static void main(String args []) { TestArray [] myBooks = new TestArray [2]; int x = 0; myBooks [0].title = \"b1\"; myBooks [1].title = \"b2\"; while(x < 2) { System. out .println ( \"book \"+ myBooks [x].title ); x++ ; } } class Hobbits { String name ; public static void main(String args []) { Hobbits[] h = new Hobbits[2] ; int z = 0 ; while (z < 2) { z = z + 1 ; h[z] = new Hobbits() ; h[z].name =\"H\" + z ; System. out .println (\"name \"+ h[z].name ); } } }",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 7,
+    "keywords": [
+      "testarray mybooks new",
+      "mybooks new testarray",
+      "title b2 println",
+      "title class hobbits",
+      "hobbits string public",
+      "println book",
+      "println",
+      "string args testarray",
+      "class testarray",
+      "string args hobbits"
+    ]
+  },
+  {
+    "chunk_id": "b850e1b5-edf6-4503-9609-7d936177ccdc",
+    "text": "Program Requirements Object Array Declares an object array Allocates memory for the array (size 5) Creates objects inside the array Prints all object values using a loop Low Level Design Object Array Create a class named Book Add one data member title Create a class named ObjectArrayDemo Define the main method Inside main, declare an object array Allocate memory for 5 objects Create objects using a loop Assign values to object fields Use a loop to print object values Class Creation class Book { String title; } Declare Object Array Book[] books; Allocate Memory books = new Book[5]; Initialize Array, Assign and Read Values for (int i = 0; i < books.length ; i ++) { books[ i ] = new Book(); books[ i ].title = \"Book \" + ( i + 1); } for (int i = 0; i < books.length ; i ++) { System.out.println (books[ i ].title); }",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 9,
+    "keywords": [
+      "allocate memory books",
+      "declare object array",
+      "array create",
+      "book books allocate",
+      "design object array",
+      "books allocate",
+      "object array",
+      "books allocate memory",
+      "array create class",
+      "array book books"
+    ]
+  },
+  {
+    "chunk_id": "745d9359-c752-423c-bb56-d281e21b1592",
+    "text": "class Book { String title; } class ObjectArrayDemo { public static void main(String[] args ) { Book[] books; books = new Book[5]; for (int i = 0; i < books.length ; i ++) { books[ i ] = new Book(); books[ i ].title = \"Book \" + ( i + 1); } for (int i = 0; i < books.length ; i ++) { System.out.println (books[ i ].title); } } }",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 10,
+    "keywords": [
+      "book books books",
+      "println",
+      "book books title",
+      "length println books",
+      "string title class",
+      "string args book",
+      "objectarraydemo public",
+      "objectarraydemo public static",
+      "class objectarraydemo public",
+      "class objectarraydemo"
+    ]
+  },
+  {
+    "chunk_id": "fb358609-e011-4426-a6d4-6e9efd7ab991",
+    "text": "Abstract class Bike{ Abstract void run(); } Class Honda extends Bike{ void run() { System.out.println ( run safely ); } Public static void main() { Bike obj = new Honda() ; obj.run () ; }",
+    "source_file": "3726df6052e34699b65ce98769498802_1.4_1044_Array.pptx",
+    "page_number": 12,
+    "keywords": [
+      "abstract void",
+      "extends bike",
+      "main bike obj",
+      "println run",
+      "class honda",
+      "extends bike void",
+      "void run println",
+      "run class honda",
+      "run class",
+      "abstract class"
+    ]
+  },
+  {
+    "chunk_id": "e56f35aa-ed22-4730-b6ea-0b77c4c4cf61",
+    "text": "class BasicPhone { private String brand = \"iPhone\"; protected void makeCall () { System.out.println (\"Making call from Basic Phone \" + brand); } } public class TestPhone { public static void main(String[] args ) { BasicPhone myPhone = new BasicPhone (); myPhone.makeCall (); } }",
+    "source_file": "05f51c7a72094bde85f5fde62ee12574_1.5_1044_Unit1Recap.pptx",
+    "page_number": 3,
+    "keywords": [
+      "println making basic",
+      "basic phone",
+      "public class testphone",
+      "class testphone public",
+      "myphone new basicphone",
+      "class testphone",
+      "making basic phone",
+      "args basicphone myphone",
+      "basicphone private string",
+      "string args basicphone"
+    ]
+  },
+  {
+    "chunk_id": "425a4f21-e2d4-4ce5-a1eb-c517781408d2",
+    "text": "A stack stores data using first-in, last-out ordering. Stacks are controlled through two operations traditionally called push and pop . Class: Stack Data Members array stck of size 10 integer tos // top of stack index Constructor: Stack() set tos = -1 // stack is initially empty Method: push(item) if tos equals 9 then print \"Stack is full\" else increment tos by 1 store item in stck [ tos ] end if Method: pop() if tos is less than 0 then print \"Stack underflow\" return 0 else store stck [ tos ] in value decrement tos by 1 return value end if Class: TestStack Method: main create object mystack1 of Stack create object mystack2 of Stack Push values into stacks for i from 0 to 9 do mystack1.push( i ) end for for i from 10 to 19 do mystack2.push( i ) end for Pop and display values print \"Stack in mystack1:\" for i from 0 to 9 do print mystack1.pop() end for print \"Stack in mystack2:\" for i from 0 to 9 do print mystack2.pop() end for",
+    "source_file": "05f51c7a72094bde85f5fde62ee12574_1.5_1044_Unit1Recap.pptx",
+    "page_number": 7,
+    "keywords": [
+      "integer tos stack",
+      "ordering stacks controlled",
+      "stack mystack2 print",
+      "class stack data",
+      "stack mystack1 print",
+      "ordering stacks",
+      "stack increment tos",
+      "stacks controlled operations",
+      "stack data",
+      "values print stack"
+    ]
+  },
+  {
+    "chunk_id": "59c6c836-7083-44d1-aefa-90e19f55e920",
+    "text": "Integer Array (Creation & Access) Declare and create in one line int[] arr = new int[10]; Store a value in array arr [index] = value; Read a value from array value = arr [index]; Printing Output Print text or value (new line) System.out.println (value); Print text with variable System.out.println (\"Text \" + variable); Assignment = Arithmetic + addition - subtraction * multiplication / division % modulus Increment & Decrement Pre-increment ++x // increase first, then use Post-increment x++ // use first, then increase Pre-decrement --x Post-decrement x-- Used in stack example: stck [++ tos ] = item; return stck [ tos --]; Comparison Operators (Conditions) == equal to != not equal to < less than > greater than <= less than or equal to >= greater than or equal to Example: if ( tos == 9) if ( tos < 0)",
+    "source_file": "05f51c7a72094bde85f5fde62ee12574_1.5_1044_Unit1Recap.pptx",
+    "page_number": 8,
+    "keywords": [
+      "pre increment",
+      "variable assignment arithmetic",
+      "text variable println",
+      "line println value",
+      "increase pre decrement",
+      "println value print",
+      "decrement post decrement",
+      "division modulus increment",
+      "integer array",
+      "integer array creation"
+    ]
+  },
+  {
+    "chunk_id": "0f1b6ae7-bb3e-4152-a643-a8d2046227f2",
+    "text": "if else Statement if (condition) { statements; } else { statements; } for Loop for (initialization; condition; update) { statements; } Example: for (int i = 0; i < 10; i ++) Method Definition & Call returnType methodName (parameters) Example: void push(int item) int pop() Call method object.method (arguments); Object Creation ClassName objectName = new ClassName (); Example: Stack mystack1 = new Stack(); Key Keywords Used class define a class int integer type void no return value return send value back new create object",
+    "source_file": "05f51c7a72094bde85f5fde62ee12574_1.5_1044_Unit1Recap.pptx",
+    "page_number": 9,
+    "keywords": [
+      "statements example int",
+      "condition statements",
+      "statements statements",
+      "update statements",
+      "initialization condition update",
+      "arguments object creation",
+      "example stack mystack1",
+      "classname example stack",
+      "stack key keywords",
+      "loop initialization"
+    ]
+  },
+  {
+    "chunk_id": "da1cf07c-3406-4546-b1ad-bb6f28c9ed7a",
+    "text": "Modify the existing Stack class so that the stack size is not hard-coded , but is passed from the test class at runtime . Stack Class Remove the hard-coded array size. The stack size must be received as a parameter through the constructor. Create the stack array using the passed size. The stack should still: Prevent overflow Prevent underflow Use tos to track the top of the stack Test Class Create two Stack objects with different sizes . Push values up to the defined size. Pop and display all values from each stack.",
+    "source_file": "05f51c7a72094bde85f5fde62ee12574_1.5_1044_Unit1Recap.pptx",
+    "page_number": 10,
+    "keywords": [
+      "stack test",
+      "modify existing stack",
+      "runtime stack class",
+      "array size stack",
+      "class stack size",
+      "constructor create stack",
+      "create stack array",
+      "size stack prevent",
+      "stack test class",
+      "passed size stack"
+    ]
+  },
+  {
+    "chunk_id": "add15551-febb-4422-b82e-6fb4761f6d86",
+    "text": "Paper 1 : Question 1: Student Marks Analyzer Write a Java program to store and analyze the marks of a student in 5 subjects using object-oriented principles. Design a class named Student that represents a student. Each student has: a name marks in 5 subjects The Student class must: store its data using private instance variables use a constructor to initialize the student s name and marks provide one getter method named getName () to return the student s name include the following methods: getTotalMarks () returns the total of marks in all 5 subjects getAverageMarks () returns the average marks Direct access to instance variables from outside the class must not be allowed. Create a separate test class containing the main() method. In the main() method: use the Scanner class to read the student s name read marks for 5 subjects into an integer array create a Student object using the constructor display the student s name, total marks, and average marks",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 1,
+    "keywords": [
+      "student object",
+      "marks analyzer write",
+      "analyze marks",
+      "total marks subjects",
+      "student subjects using",
+      "marks analyzer",
+      "student object using",
+      "initialize student marks",
+      "student read marks",
+      "student total marks"
+    ]
+  },
+  {
+    "chunk_id": "4f88ca04-a4a9-4edc-8e39-638ed84882b2",
+    "text": "1. Scanner Package: ` java.util ` Reads input token by token Easy and beginner-friendly Example methods: ` nextInt ()`, ` nextLine ()`, ` nextDouble ()` 2. BufferedReader Package: `java.io` Used with ` InputStreamReader ` Reads input line by line Faster than Scanner Requires manual type conversion 3. Command Line Arguments Uses `String[] args ` in `main` Input passed while running the program No runtime input 4. Console Class Package: `java.io` Reads input securely (e.g., passwords) Not supported in some IDEs",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 2,
+    "keywords": [
+      "java io",
+      "input passed running",
+      "scanner requires",
+      "input token token",
+      "bufferedreader package java",
+      "java io reads",
+      "input token",
+      "reads input securely",
+      "java util",
+      "scanner package"
+    ]
+  },
+  {
+    "chunk_id": "6d83db84-bbec-4e0d-9674-877eaf948381",
+    "text": "Scanner sc = new Scanner(System. in ); System. out .print (\"Enter your name: \"); String name = sc.nextLine (); Scanner is a built-in Java class used to read input from different sources such as keyboard input, files, and strings It belongs to the package java.util When used with System.in, it reads standard input (keyboard input)",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 3,
+    "keywords": [
+      "string sc nextline",
+      "read input different",
+      "scanner built",
+      "enter string",
+      "new scanner",
+      "read input",
+      "enter string sc",
+      "print enter string",
+      "nextline scanner built",
+      "scanner built java"
+    ]
+  },
+  {
+    "chunk_id": "f43020ea-4a02-4322-b57e-6fdd83516f3c",
+    "text": "Reading String / text input Read a full line (including spaces) String s = sc.nextLine (); Reads: Hello Java World Read a single word (stops at space) String s = sc.next (); Input: Hello Java Stored: Hello Reading integer numbers Read an int int x = sc.nextInt (); Read a long long x = sc.nextLong (); Read a short short x = sc.nextShort (); Read a byte byte x = sc.nextByte (); Reading decimal numbers Read a float float f = sc.nextFloat (); Closing Scanner sc.close (); -- Frees resources",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 4,
+    "keywords": [
+      "spaces string sc",
+      "read float",
+      "reading decimal numbers",
+      "read byte",
+      "nextlong read short",
+      "nextint read long",
+      "space string sc",
+      "input hello java",
+      "java world read",
+      "string sc nextline"
+    ]
+  },
+  {
+    "chunk_id": "31ec8378-6c1d-429f-b77d-72e43f8b3127",
+    "text": "Scanner can read input from many different sources , not just the keyboard. 1. Keyboard input Scanner sc = new Scanner(System.in); 2. File input Scanner sc = new Scanner(new File(\"data.txt\")); 3. String input (very common in testing) Scanner sc = new Scanner(\"Java is powerful\"); 4. Network / stream input InputStream stream = socket.getInputStream (); Scanner sc = new Scanner(stream);",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 5,
+    "keywords": [
+      "new scanner file",
+      "scanner new file",
+      "read input",
+      "read input different",
+      "scanner stream",
+      "new scanner java",
+      "scanner java powerful",
+      "getinputstream scanner sc",
+      "socket getinputstream scanner",
+      "keyboard input scanner"
+    ]
+  },
+  {
+    "chunk_id": "79f957f5-0e7c-4a2a-86ad-d1239deeeb84",
+    "text": "Write only the code for a subclass named SpecializedStudent that inherits from the Student class . The SpecializedStudent class must: add one additional private instance variable named specialization include a constructor that accepts: student name marks of 5 subjects specialization and initializes the parent class using super provide a getter method named getSpecialization () No main() method is required for this question",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 8,
+    "keywords": [
+      "specialization include constructor",
+      "inherits student",
+      "subclass named",
+      "specializedstudent class add",
+      "write code subclass",
+      "parent class using",
+      "subjects specialization",
+      "subjects specialization initializes",
+      "class using super",
+      "marks subjects specialization"
+    ]
+  },
+  {
+    "chunk_id": "2fcdd2a6-c790-4e4b-8185-a4451e9ac602",
+    "text": "Inheritance is an OOP mechanism where one class (child / subclass) acquires properties and methods of another class (parent / superclass). It is implemented in Java using the extends keyword. It represents an is-a relationship (e.g., Car is a Vehicle). It promotes code reusability by avoiding duplication. The child class can use, extend, or override methods of the parent class. It improves maintainability and extensibility of code. Java supports single inheritance for classes to avoid ambiguity. Access to parent members depends on access modifiers (public, protected, etc.).",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 9,
+    "keywords": [
+      "class child subclass",
+      "child subclass acquires",
+      "class use extend",
+      "extensibility code java",
+      "parent class",
+      "java using extends",
+      "superclass implemented java",
+      "supports single inheritance",
+      "single inheritance",
+      "inheritance oop mechanism"
+    ]
+  },
+  {
+    "chunk_id": "a1913000-bce5-480c-b7f9-cd032a1a81b2",
+    "text": "class Vehicle { void start() { System.out.println (\"Vehicle is starting\"); } } class Car extends Vehicle { void drive() { start(); // using parent method } } class Vehicle { void start() { System.out.println (\"Vehicle is starting\"); } } class Car extends Vehicle { void playMusic () { System.out.println (\"Playing music\"); } } class Vehicle { void start() { System.out.println (\"Vehicle is starting\"); } } class Car extends Vehicle { @Override void start() { System.out.println (\"Car starts with key ignition\"); } }",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 10,
+    "keywords": [
+      "using parent",
+      "start println vehicle",
+      "class car",
+      "starting class",
+      "void start println",
+      "extends vehicle override",
+      "println car",
+      "method class",
+      "parent method",
+      "using parent method"
+    ]
+  },
+  {
+    "chunk_id": "4ed6f53e-343d-4fbf-b3cb-3e0c10db9c00",
+    "text": "Part 1: Parent Class and Main Class 1. Create a class named ` BasicPhone `. Declare a private variable named `brand` of type `String`. Declare a public method named ` makeCall ()` that prints exactly: Making a call using basic phone network with brand + brand 2. Create a class named ` TestPhone ` containing the `main()` method. Create an object of ` BasicPhone `. Call the ` makeCall ()` method.",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 11,
+    "keywords": [
+      "main class create",
+      "create class",
+      "basic phone",
+      "main method create",
+      "brand create class",
+      "testphone containing main",
+      "basicphone declare private",
+      "basic phone network",
+      "class named testphone",
+      "basicphone makecall method"
+    ]
+  },
+  {
+    "chunk_id": "87626459-a0cc-4bff-8b9f-353559e5bac2",
+    "text": "class BasicPhone { private String brand = \"iPhone\" ; protected void makeCall (){ System. out .println (\"Making call from Basic Phone\" +brand); } protected String getBrand (){ return brand ; } } public class TestPhone { public static void main(String[] args ) { BasicPhone myPhone = new BasicPhone () ; myPhone.makeCall (); } }",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 12,
+    "keywords": [
+      "basic phone brand",
+      "basic phone",
+      "public class testphone",
+      "args basicphone",
+      "myphone new basicphone",
+      "class testphone public",
+      "making basic phone",
+      "class testphone",
+      "string args basicphone",
+      "basicphone private string"
+    ]
+  },
+  {
+    "chunk_id": "c8f0015c-dcc1-482a-af1d-0b69a3271096",
+    "text": "Part 2: Child Class with Method Overriding Create a class named SmartPhone that extends BasicPhone . Override the public method makeCall (). The overridden method must print exactly : Making a call using smartphone features No other methods or variables should be added. Part 3 : Update the `Main` class. Declare a reference variable of type ` SmartPhone `. Assign it an object of ` SmartPhone `. Call the ` makeCall ()` method using this reference. Part 4: Demonstrating Polymorphism Using Parent Reference Update the TestPhone class again. Declare a reference variable of type BasicPhone . Assign this reference variable an object of SmartPhone . Call the makeCall () method using the BasicPhone reference.",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 13,
+    "keywords": [
+      "using basicphone reference",
+      "variable object smartphone",
+      "variable type smartphone",
+      "smartphone assign object",
+      "basicphone assign reference",
+      "basicphone override public",
+      "update testphone class",
+      "extends basicphone override",
+      "class named smartphone",
+      "testphone class declare"
+    ]
+  },
+  {
+    "chunk_id": "08c29ffd-b63c-4c90-b080-25c7e36d8569",
+    "text": "class BasicPhone { private String brand = \"iPhone\" ; protected void makeCall (){ System. out .println (\"Making call from Basic Phone\" +brand); } protected String getBrand (){ return brand ; } } class SmartPhone extends BasicPhone { @Override protected void makeCall (){ System. out .println (\"Making call from Smart Phone\" + getBrand ()); } } public class TestPhone { public static void main(String[] args ) { BasicPhone myPhone = new BasicPhone () ; myPhone.makeCall (); SmartPhone mySPhone = new SmartPhone (); mySPhone.makeCall (); } }",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 14,
+    "keywords": [
+      "public class testphone",
+      "makecall smartphone mysphone",
+      "string args basicphone",
+      "args basicphone myphone",
+      "smartphone mysphone makecall",
+      "class smartphone extends",
+      "class testphone public",
+      "making basic phone",
+      "extends basicphone override",
+      "basicphone private string"
+    ]
+  },
+  {
+    "chunk_id": "402473dd-0686-48af-871e-5b6f603071ca",
+    "text": "import java.lang.reflect.Array ; class SimpleStartup { private int[] locationCells ; private int numOfHits = 0 ; public void setLocationCells ( int[] locs) { locationCells = locs ; } public String checkYourself (int guess) { String resultI = \"miss\" ; for (int cell : locationCells ) { if (guess == cell) { resultI =\"hit\" ; numOfHits ++ ; break ; } //end if if ( numOfHits == locationCells.length ){ resultI = \"kill\" ; } //end if } // end for System. out .println ( resultI ) ; return ( resultI ) ; } //end method } //end class public class SimplaStartupTest { public static void main(String[] args ){ SimpleStartup dot = new SimpleStartup () ; int[] locations = {2,3,4} ; int userGuess ; dot.setLocationCells (locations); System. out .println (\"Enter Guess\"); try { userGuess = Integer. parseInt ( args [0]); } catch ( NumberFormatException e) { System. out .println (\"enter valid int\") ; return ; } catch ( ArrayIndexOutOfBoundsException e) { System. out .println (\"enter parameter\") ; return ; } String result = dot.checkYourself ( userGuess ) ; String testResult = \"failed\" ; if ( result.equals (\"hit\")) { testResult = \"passed\" ; } System. out .println ( testResult ); } }",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 15,
+    "keywords": [
+      "private int locationcells",
+      "locationcells guess",
+      "dot setlocationcells",
+      "locationcells private int",
+      "locationcells length resulti",
+      "guess cell resulti",
+      "int locs locationcells",
+      "public void setlocationcells",
+      "void setlocationcells",
+      "setlocationcells locations println"
+    ]
+  },
+  {
+    "chunk_id": "6f4f19b7-5f73-4c23-821d-17a34d16c6e7",
+    "text": "Question 2: Input Validation using try catch (Student Marks) Modify only the test class containing the main() method of Question 1 to ensure that the marks entered by the user are valid integers . The main() method must: use the Scanner class to read marks for 5 subjects use a try catch block to handle invalid (non-integer) input display an appropriate message when invalid input is entered continue accepting input until valid integer marks are provided for all subjects You are not required to modify the Student class for this question .",
+    "source_file": "4083e77e5b0c46d488cb6e4a37494460_1.X_Test_Review.pptx",
+    "page_number": 17,
+    "keywords": [
+      "scanner class read",
+      "student marks modify",
+      "student class question",
+      "using try catch",
+      "required modify student",
+      "catch student",
+      "accepting input valid",
+      "question ensure marks",
+      "valid integer marks",
+      "validation using try"
+    ]
+  },
+  {
+    "chunk_id": "075332dd-36a5-46a5-a4c2-84c228c17feb",
+    "text": "2-D Arrays",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 5,
+    "keywords": []
+  },
+  {
+    "chunk_id": "5064d885-0235-404d-b41e-05c3f8f04b90",
+    "text": "public class TwoDArrayDemo { public static void main(String[] args ) { // 1. 2D array creation int[][] temp = { {30, 31, 29}, {32, 33, 31}, {28, 27, 29} }; // 2. Printing directly () System.out.println (temp); // shows reference, not data // 3. Printing with nested loops System.out.println (\"Printing using nested loops:\"); for (int i = 0; i < temp.length ; i ++) { for (int j = 0; j < temp[ i ].length; j++ ) { System.out.print (temp[ i ][j] + \" \"); } System.out.println (); } 2-D Array - Code [[I@15db9742",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 6,
+    "keywords": [
+      "println printing using",
+      "twodarraydemo public static",
+      "class twodarraydemo public",
+      "array creation int",
+      "args 2d array",
+      "printing nested loops",
+      "class twodarraydemo",
+      "array code 15db9742",
+      "loops println printing",
+      "nested loops println"
+    ]
+  },
+  {
+    "chunk_id": "dbd14b19-5c19-4ba5-b3ba-376547ff0e41",
+    "text": "https://docs.oracle.com/javase/8/docs/api/",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 8,
+    "keywords": [
+      "https",
+      "docs",
+      "com",
+      "https docs",
+      "oracle",
+      "docs api",
+      "docs oracle",
+      "api",
+      "com javase",
+      "javase"
+    ]
+  },
+  {
+    "chunk_id": "076eb9c8-25f6-4fb6-8707-fd55355ccfd9",
+    "text": "import java.util.Arrays ; public class TwoDArrayDemo { pubic static void main(String[] args ) { // 1. 2D array creation int[][] temp = { {30, 31, 29}, {32, 33, 31}, {28, 27, 29} }; System.out.println (\"Printing using Arrays utility:\"); // row by row (1D at a time) for (int i = 0; i < temp.length ; i ++) { System.out.println ( Arrays.toString (temp[ i ])); } System.out.println (\"Full 2D print using deepToString :\"); System.out.println ( Arrays.deepToString (temp)); } } 2-D Array java.util.Arrays",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 9,
+    "keywords": [
+      "deeptostring println",
+      "arrays",
+      "temp println 2d",
+      "array creation",
+      "args 2d array",
+      "temp array java",
+      "arrays deeptostring",
+      "println 2d",
+      "java util arrays",
+      "println 2d print"
+    ]
+  },
+  {
+    "chunk_id": "d672f2a3-23f2-46e3-9b87-bdc96d3d261f",
+    "text": "import java.util.Arrays ; public class JaggedArrayDemo { public static void main(String[] args ) { int[][] temp = { {30, 31}, {32, 33, 31}, {28} }; System.out.println (\"Row-wise printing:\"); for (int i = 0; i < temp.length ; i ++) { System.out.println ( Arrays.toString (temp[ i ])); } // Printing full jagged array using deepToString () System.out.println (\"Full jagged array:\"); System.out.println ( Arrays.deepToString (temp)); } } 2-D Jagged Array java.util.Arrays",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 10,
+    "keywords": [
+      "arrays deeptostring",
+      "println row wise",
+      "printing jagged",
+      "array java",
+      "public class jaggedarraydemo",
+      "length println arrays",
+      "class jaggedarraydemo",
+      "deeptostring println jagged",
+      "array println arrays",
+      "temp jagged array"
+    ]
+  },
+  {
+    "chunk_id": "dd800aa8-0e93-46b5-807d-1a60720909e9",
+    "text": "3-D Arrays",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 11,
+    "keywords": []
+  },
+  {
+    "chunk_id": "926aaad1-dba1-4a1d-ad5b-62fd7504fc04",
+    "text": "import java.util.Arrays ; public class ThreeDArrayDemo { public static void main(String[] args ) { int[][][] temp = { { // City 0 {30, 31, 29}, // Day 0 {32, 33, 31} // Day 1 }, { // City 1 {28, 27, 29}, // Day 0 {26, 25, 24} // Day 1 } }; for (int i = 0; i < temp.length ; i ++) { System.out.println (\"City \" + i + \": \" + Arrays.deepToString (temp[ i ])); } System.out.println ( Arrays.deepToString (temp)); } } 3-D Arrays Code deepToString",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 12,
+    "keywords": [
+      "class threedarraydemo public",
+      "temp arrays code",
+      "threedarraydemo public static",
+      "public class threedarraydemo",
+      "println arrays",
+      "java util arrays",
+      "deeptostring temp arrays",
+      "arrays deeptostring temp",
+      "city arrays",
+      "println arrays deeptostring"
+    ]
+  },
+  {
+    "chunk_id": "69ac2cee-360c-470e-b6ec-19e918c3fc67",
+    "text": "ArrayList is an array that automatically resizes using internal copying. ArrayList <Integer> marks = new ArrayList <>(); marks.add (45); marks.add (78); marks.add (12); ArrayList",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 13,
+    "keywords": [
+      "automatically resizes using",
+      "resizes using",
+      "array",
+      "array automatically",
+      "add 12 arraylist",
+      "array automatically resizes",
+      "internal copying arraylist",
+      "arraylist marks add",
+      "copying arraylist integer",
+      "arraylist integer marks"
+    ]
+  },
+  {
+    "chunk_id": "b98686bd-70a6-46d2-80d0-0b3c07fb244c",
+    "text": "Which of the following loop headers will cause an ArrayIndexOutOfBoundsException while traversing the array scores? (Choose all that apply) A. for (int i = 0; i < scores.length ; i ++) B. for (int i = 1; i < scores.length ; i ++) C. for (int i = 0; i <= scores.length ; i ++) D. for (int i = 0; scores.length > i ; i ++) E. for (int i = scores.length - 1; i >= 0; i ++)",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 14,
+    "keywords": [
+      "following loop",
+      "following loop headers",
+      "scores length",
+      "scores choose",
+      "int scores length",
+      "loop headers cause",
+      "array",
+      "traversing array",
+      "headers cause arrayindexoutofboundsexception",
+      "cause arrayindexoutofboundsexception"
+    ]
+  },
+  {
+    "chunk_id": "7248e510-297e-44df-897c-6bcb0042c6e2",
+    "text": "11- February",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 15,
+    "keywords": []
+  },
+  {
+    "chunk_id": "34c6e771-9f71-45c8-a725-db9a6908b1d2",
+    "text": "A class teacher has collected the marks of students in an exam. The teacher wants to: Arrange the marks in ascending order Find whether a particular student s mark exists Increase the capacity to store more marks Check whether two mark lists are the same sort : teacher arranges marks in order binarySearch : teacher checks if a student s mark exists copyOf : teacher prepares space for new students equals : teacher compares two result sheets 2-D Arrays java.util methods",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 16,
+    "keywords": [
+      "compares result",
+      "arranges marks",
+      "marks students exam",
+      "binarysearch teacher checks",
+      "binarysearch teacher",
+      "sort teacher arranges",
+      "marks order binarysearch",
+      "teacher compares result",
+      "mark lists sort",
+      "arrange marks ascending"
+    ]
+  },
+  {
+    "chunk_id": "aca55247-b5df-451e-8b85-a9b37c0ab740",
+    "text": "import java.util.Arrays ; class StudentMarksArray { public static void main(String[] args ) { // 1. Create array and store marks int[] marks = {72, 85, 64, 90, 78}; // 2. Sort marks in ascending order Arrays.sort (marks); // 3. Search for a particular student's mark int searchMark = 78; int result = Arrays.binarySearch (marks, searchMark ); if (result >= 0) { System.out.println (\"Mark found at index: \" + result); } else { System.out.println (\"Mark not found\"); } } } 2-D Arrays java.util code",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 17,
+    "keywords": [
+      "particular student mark",
+      "marks searchmark result",
+      "arrays java util",
+      "searchmark result println",
+      "sort marks",
+      "arrays java",
+      "arrays binarysearch marks",
+      "sort marks search",
+      "studentmarksarray public static",
+      "class studentmarksarray public"
+    ]
+  },
+  {
+    "chunk_id": "1e954cfd-da6c-4e4a-8878-94b6cfff7569",
+    "text": "class TeacherMarksArrayResize { public static void main(String[] args ) { // Initial capacity for marks int[] marks = new int[2]; int size = 0; // number of marks actually stored // Adding marks marks[size++] = 72; marks[size++] = 85; // Capacity full need resizing int[] newMarks = new int[10]; System.arraycopy (marks, 0, newMarks , 0, marks.length ); marks = newMarks ; marks[size++] = 55; } } Resize class",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 18,
+    "keywords": [
+      "marks newmarks marks",
+      "arraycopy",
+      "marks actually stored",
+      "72 marks size",
+      "marks marks size",
+      "55 resize class",
+      "resize class",
+      "10 arraycopy marks",
+      "teachermarksarrayresize public",
+      "teachermarksarrayresize public static"
+    ]
+  },
+  {
+    "chunk_id": "88520c8c-bf74-4960-a752-a9cbcd9c1d86",
+    "text": "import java.util.ArrayList ; class TeacherMarksResize { public static void main(String[] args ) { ArrayList <Integer> marks = new ArrayList <>(); marks.ensureCapacity (10); marks.add (72); marks.add (85); marks.ensureCapacity (20); marks.add (55); marks.add (88); System.out.println (\"Total students: \" + marks.size ()); } } Resize class with Arraylist",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 19,
+    "keywords": [
+      "teachermarksresize public",
+      "total students marks",
+      "marks size resize",
+      "arraylist integer marks",
+      "java util arraylist",
+      "size resize class",
+      "arraylist class",
+      "resize class",
+      "class teachermarksresize public",
+      "println total students"
+    ]
+  },
+  {
+    "chunk_id": "aeb670b9-7f1a-48da-a4a9-a0ec7a7ed2ca",
+    "text": "Object Array",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 20,
+    "keywords": []
+  },
+  {
+    "chunk_id": "e84bae03-4f59-4292-a733-837589f547ae",
+    "text": "class Student { String name; int sapId ; int marks; } public class StudentArrayDemo { public static void main(String[] args ) { // Step 1: Declare and create object array Student[] students = new Student[3]; // Step 2: Create Student objects and assign to array students[0] = new Student(); students[0].name = \"Amit\"; students[0]. sapId = 101; students[0].marks = 78; students[1] = new Student(); students[1].name = \"Neha\"; students[1]. sapId = 102; students[1].marks = 85; Create Object array Code Part 1",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 21,
+    "keywords": [
+      "student objects",
+      "class studentarraydemo public",
+      "studentarraydemo public static",
+      "public class studentarraydemo",
+      "create student objects",
+      "array",
+      "assign array",
+      "array code",
+      "objects assign array",
+      "create object array"
+    ]
+  },
+  {
+    "chunk_id": "57966497-35fa-491a-873c-37f4ee701333",
+    "text": "students[2] = new Student(); students[2].name = \"Rahul\"; students[2]. sapId = 103; students[2].marks = 72; // Display student details for (int i = 0; i < students.length ; i ++) { System.out.println ( students[ i ].name + \" \" + students[ i ]. sapId + \" \" + students[ i ].marks ); } } } Create Object array code part 2",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 22,
+    "keywords": [
+      "students sapid",
+      "sapid students marks",
+      "students rahul students",
+      "students length println",
+      "students marks create",
+      "display student details",
+      "array",
+      "array code",
+      "object array",
+      "create object array"
+    ]
+  },
+  {
+    "chunk_id": "b38b5a09-231f-4e8e-8e09-ba8e457a98da",
+    "text": "Part 3",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 24,
+    "keywords": []
+  },
+  {
+    "chunk_id": "fa0be4ed-247f-42a7-9c5c-bd52523d9a1a",
+    "text": "Build a University CRM program to 1. Store student & employee information 2. manage student records, calculate averages, sort by performance, and handle dynamic additions.",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 26,
+    "keywords": [
+      "information manage",
+      "student",
+      "crm",
+      "employee information manage",
+      "build university",
+      "student records",
+      "store student employee",
+      "student records calculate",
+      "crm program store",
+      "crm program"
+    ]
+  },
+  {
+    "chunk_id": "d1116975-13d5-4d23-9580-72efbc65fee5",
+    "text": "Part 1 Store University Information",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 27,
+    "keywords": []
+  },
+  {
+    "chunk_id": "d61f416b-540c-4d1f-847e-ef019d3a15c9",
+    "text": "A university has different types of people. Every person in the university has: a name an ID There are two main groups of people: Students They are enrolled in courses. They belong to a department. Each student has marks in 5 subjects. Employees They work for the university. They belong to a department. There are different kinds of employees: Teachers : Teachers teach courses. Administrative Staff : Administrative Staff handle university operations. General Notes: Teachers, Students, and Administrative Staff may conduct research. There are also Departments in the university. Each department has: department name department code",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 28,
+    "keywords": [
+      "teachers students administrative",
+      "university different",
+      "people students enrolled",
+      "person university id",
+      "groups people students",
+      "courses administrative staff",
+      "employees work university",
+      "departments university department",
+      "department different kinds",
+      "university different types"
+    ]
+  },
+  {
+    "chunk_id": "b7a5f1c6-a46a-43a7-8bb2-544a50c885d6",
+    "text": "Class Just an object Subclass More specific version Abstract Class Common template Interface Role anyone can play",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 29,
+    "keywords": [
+      "class just object",
+      "class common",
+      "common template",
+      "interface role play",
+      "interface role",
+      "version abstract",
+      "object subclass",
+      "specific version abstract",
+      "template interface",
+      "subclass specific version"
+    ]
+  },
+  {
+    "chunk_id": "c2765db1-039c-4ed7-90c9-fc3f0f2183d2",
+    "text": "1 Person name : String id : int 2 Student name : String id : int Marks : int[] departmentName : String 3 Employee name : String id : int departmentName : String 4 Teacher name : String id : int departmentName : String 5 AdministrativeStaff name : String id : int departmentName : String 6 Department departmentName : String departmentCode : String 7 Researcher (optional) (No attributes)",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 30,
+    "keywords": [
+      "string researcher optional",
+      "researcher optional attributes",
+      "departmentname string administrativestaff",
+      "int departmentname",
+      "employee string id",
+      "string departmentcode string",
+      "marks int departmentname",
+      "id int departmentname",
+      "student string id",
+      "departmentname string teacher"
+    ]
+  },
+  {
+    "chunk_id": "0d467ce8-c3c1-4aa2-945f-30724872ba8f",
+    "text": "1 Abstract Class A class that provides common structure. We should not create its object directly. It represents a general idea, not a concrete entity. It reduces duplication in child classes. 2 Subclass A more specific version of another class. Must pass the IS-A test. Inherits properties from a parent class. 3 Interface Represents a role or ability. Different unrelated classes can implement it. It defines behavior, not identity. 4 Normal Class A regular concrete object. Does not act as a template. Does not represent a role. Can be instantiated directly.",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 31,
+    "keywords": [
+      "concrete entity",
+      "different unrelated classes",
+      "class provides common",
+      "inherits properties",
+      "interface represents role",
+      "subclass specific",
+      "child classes subclass",
+      "classes implement defines",
+      "class interface represents",
+      "abstract"
+    ]
+  },
+  {
+    "chunk_id": "35afe240-2fab-41a1-943b-622b117fed9d",
+    "text": "Part 2 Student Marks Sorting Build a Java program to manage student records, calculate averages, sort by performance, and handle dynamic additions. The program will be implemented in two stages : Stage A Basic Student Creation Create the Student class. Use hard-coded data to create student objects. Store them in an Array / Arraylist ?? Display all student details including calculated average. Stage B Sorting by Performance Implement Comparable<Student>. Override compareTo () to sort students by average marks. Use Collections.sort () to rank students. Display the sorted results.",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 34,
+    "keywords": [
+      "arraylist display student",
+      "marks sorting build",
+      "student records calculate",
+      "students average",
+      "program manage student",
+      "marks sorting",
+      "sorting build java",
+      "comparable student",
+      "comparable student override",
+      "students average marks"
+    ]
+  },
+  {
+    "chunk_id": "e71d3bd3-830c-4e07-bdc2-0aaf67607198",
+    "text": "Compare & Sort",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 37,
+    "keywords": []
+  },
+  {
+    "chunk_id": "5b23474e-9a7c-4f38-bb87-6524cfa212bb",
+    "text": "import java.util.Arrays ; class Student implements Comparable<Student> { int id; String name; double marks; public Student(int id, String name, double marks) { this.id = id; this.name = name; this.marks = marks; } // compare by marks (highest first) @Override public int compareTo (Student s) { if ( this.marks < s.marks ) return 1; else if ( this.marks > s.marks ) return -1; else return 0; } public void display() { System.out.println (id + \" \" + name + \" \" + marks); } } Student Class with compareTo Using Marks",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 38,
+    "keywords": [
+      "marks student",
+      "class compareto using",
+      "class compareto",
+      "marks student class",
+      "student marks marks",
+      "comparable student int",
+      "marks marks compare",
+      "implements comparable student",
+      "student implements comparable",
+      "compare marks highest"
+    ]
+  },
+  {
+    "chunk_id": "2b2903fb-8c38-4ae1-b5db-f55acca78363",
+    "text": "public class Main { public static void main(String[] args ) { // Create array of Students Student[] arr = new Student[5]; arr [0] = new Student(1, \"Aman\", 85); arr [1] = new Student(2, \"Riya\", 92); arr [2] = new Student(3, \"Karan\", 78); arr [3] = new Student(4, \"Neha\", 88); arr [4] = new Student(5, \"Arjun\", 95); System.out.println (\"Before Sorting:\"); for (Student s : arr ) { s.display (); } // Sort array Arrays.sort ( arr ); System.out.println (\"\\ nAfter Sorting (Highest Marks First):\"); for (Student s : arr ) { s.display (); } } } Main Class implementation with Arrays",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 39,
+    "keywords": [
+      "arrays",
+      "95 println sorting",
+      "sort arr",
+      "sorting highest",
+      "sort arr println",
+      "sorting highest marks",
+      "println sorting",
+      "create array students",
+      "array students student",
+      "array students"
+    ]
+  },
+  {
+    "chunk_id": "4e101fc8-dc47-4e89-b7aa-7ad2d35aafbb",
+    "text": "import java.util.ArrayList ; import java.util.Collections ; public class Main { public static void main(String[] args ) { // Create ArrayList of Students ArrayList <Student> list = new ArrayList <>(); list.add (new Student(1, \"Aman\", 85)); list.add (new Student(2, \"Riya\", 92)); list.add (new Student(3, \"Karan\", 78)); list.add (new Student(4, \"Neha\", 88)); list.add (new Student(5, \"Arjun\", 95)); System.out.println (\"Before Sorting:\"); for (Student s : list) { s.display (); } // Sort ArrayList Collections.sort (list); System.out.println (\"\\ nAfter Sorting (Highest Marks First):\"); for (Student s : list) { s.display (); } } } Main Class implementation with ArrayList",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 40,
+    "keywords": [
+      "sorting highest marks",
+      "arraylist",
+      "arraylist list",
+      "java util arraylist",
+      "sort list",
+      "sort list println",
+      "create arraylist students",
+      "students arraylist student",
+      "sorting student",
+      "println sorting student"
+    ]
+  },
+  {
+    "chunk_id": "4854b9a6-2cc0-4d94-9c16-0d59f51695ae",
+    "text": "class Course implements Comparable<Course> { int courseId ; String courseName ; double marks1; double marks2; double marks3; // Constructor public Course(int courseId , String courseName , double marks1, double marks2, double marks3) { this.courseId = courseId ; this.courseName = courseName ; this.marks1 = marks1; this.marks2 = marks2; this.marks3 = marks3; } // Method to calculate average public double getAverage () { return (marks1 + marks2 + marks3) / 3; } // compareTo based on average (highest first) Student Class with compareTo Using Marks Average @Override public int compareTo (Course c) { double thisAvg = this.getAverage (); double otherAvg = c.getAverage (); if ( thisAvg < otherAvg ) return 1; else if ( thisAvg > otherAvg ) return -1; else return 0; } // Display method public void display() { System.out.println ( courseId + \" \" + courseName + \" Avg: \" + getAverage ()); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 41,
+    "keywords": [
+      "courseid coursename avg",
+      "println courseid",
+      "coursename double marks1",
+      "class compareto using",
+      "marks3 compareto based",
+      "average highest student",
+      "calculate average",
+      "implements comparable course",
+      "marks average override",
+      "method calculate average"
+    ]
+  },
+  {
+    "chunk_id": "a2314dce-8e4c-410e-82c0-f6cc3f38da60",
+    "text": "import java.util.ArrayList ; import java.util.Collections ; public class Main { public static void main(String[] args ) { // Create ArrayList of Course objects ArrayList <Course> list = new ArrayList <>(); // Add 5 courses list.add (new Course(1, \"Math\", 80, 90, 85)); list.add (new Course(2, \"Physics\", 75, 88, 82)); list.add (new Course(3, \"Chemistry\", 92, 85, 90)); list.add (new Course(4, \"Biology\", 70, 78, 74)); list.add (new Course(5, \"English\", 85, 87, 89)); System.out.println (\"Before Sorting:\"); for (Course c : list) { c.display (); } // Sort based on average (highest first) Collections.sort (list); System.out.println (\"\\ nAfter Sorting (Based on Average):\"); for (Course c : list) { c.display (); } } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 42,
+    "keywords": [
+      "display sort based",
+      "sort based",
+      "sort based average",
+      "course objects arraylist",
+      "sorting based average",
+      "collections sort",
+      "arraylist add courses",
+      "arraylist course objects",
+      "sort list println",
+      "create arraylist course"
+    ]
+  },
+  {
+    "chunk_id": "e26481f1-7629-457c-8d75-c6ae183c4408",
+    "text": "Collection (Interface) Represents a group of objects. Defines basic operations: add() remove() size() contains() isEmpty () Does NOT define order or indexing. List (Interface) A specialized type of Collection. Maintains insertion order. Allows duplicates. Provides index-based access: get(index) set(index, element) add(index, element)",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 43,
+    "keywords": [
+      "interface represents group",
+      "maintains insertion order",
+      "index set index",
+      "interface represents",
+      "collection",
+      "order indexing list",
+      "collection maintains",
+      "list interface specialized",
+      "define order indexing",
+      "type collection"
+    ]
+  },
+  {
+    "chunk_id": "bbeda8fd-ebb1-4fbb-bd4e-57d951d56e74",
+    "text": "class Student implements Comparable<Student> { String name; int sapId ; int marks; // Constructor Student(String name, int sapId , int marks) { this.name = name; this.sapId = sapId ; this.marks = marks; } // compareTo defines natural ordering (by marks) public int compareTo (Student s) { return this.marks - s.marks ; // ascending order } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 44,
+    "keywords": [
+      "compareto defines",
+      "class student implements",
+      "student implements",
+      "natural ordering marks",
+      "ordering marks",
+      "public int compareto",
+      "int compareto",
+      "marks constructor student",
+      "marks ascending order",
+      "compareto student return"
+    ]
+  },
+  {
+    "chunk_id": "15d8157b-64b9-461b-9278-0189da3bba1f",
+    "text": "public class ComparableDemo { public static void main(String[] args ) { Student[] students = new Student[3]; students[0] = new Student(\"Amit\", 101, 78); students[1] = new Student(\"Neha\", 102, 85); students[2] = new Student(\"Rahul\", 103, 72); // Arrays uses compareTo () internally Arrays.sort (students); // Display sorted students for (Student s : students) { System.out.println (s.name + \" \" + s.sapId + \" \" + s.marks ); } } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 45,
+    "keywords": [
+      "comparabledemo public static",
+      "sort",
+      "display sorted",
+      "students println sapid",
+      "students println",
+      "class comparabledemo public",
+      "student students println",
+      "compareto internally arrays",
+      "internally arrays sort",
+      "arrays uses compareto"
+    ]
+  },
+  {
+    "chunk_id": "06a5ae4b-1096-417b-ab96-d7db35b13f10",
+    "text": "Part 4",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 46,
+    "keywords": []
+  },
+  {
+    "chunk_id": "0afa1efc-0f8c-4970-9319-430c63b0271c",
+    "text": "Online Food Delivery App : The system must handle: Customers place orders throughout the day. Each order has a unique Order ID. Orders are prepared in the kitchen in the order they arrive. The app maintains a list of unique restaurant names registered on the platform.",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 49,
+    "keywords": [
+      "app handle customers",
+      "list unique restaurant",
+      "place orders day",
+      "arrive app",
+      "unique restaurant names",
+      "restaurant names registered",
+      "orders prepared kitchen",
+      "arrive app maintains",
+      "delivery app handle",
+      "online food"
+    ]
+  },
+  {
+    "chunk_id": "7f4e01b5-021e-4eb0-9f8a-2e815eccd095",
+    "text": "class Jukebox1 { public static void main(String[] args ) { // Instantiate an object of HashSet HashSet<Integer> hs = new HashSet<>(); // Adding elements hs.add (1); hs.add (2); hs.add (1); System. out .println (\"HashSet Size: \" + hs.size ()); System. out .println (\"Elements in HashSet: \" + hs ); } } What will the size be ??",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 51,
+    "keywords": [
+      "new hashset adding",
+      "class jukebox1",
+      "add println hashset",
+      "hashset integer hs",
+      "hashset adding elements",
+      "object hashset",
+      "println elements hashset",
+      "hashset hs size",
+      "hashset size hs",
+      "println hashset size"
+    ]
+  },
+  {
+    "chunk_id": "7ab8c638-8f48-4f72-92ad-405b47413c48",
+    "text": "import java.util.HashSet ; class StudentHash { int id; String name; StudentHash (int id, String name) { this.id = id; this.name = name; } } public class StudentDemoHash { public static void main(String args []) { HashSet< StudentHash > set = new HashSet<>(); StudentHash s1 = new StudentHash (1, \"Ram\"); StudentHash s2 = new StudentHash (1, \"Ram\"); set.add (s1); set.add (s2); System. out .println ( set.size ()); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 52,
+    "keywords": [
+      "ram studenthash",
+      "studenthash ram",
+      "studenthash set new",
+      "hashset class",
+      "string studenthash int",
+      "studenthash int id",
+      "java util hashset",
+      "studenthash ram set",
+      "id string studenthash",
+      "args hashset studenthash"
+    ]
+  },
+  {
+    "chunk_id": "4e02874c-c90b-4161-aa5e-3c34d2bd3f24",
+    "text": "import java.util.HashSet ; import java.util.Objects ; class StudentHash { int id; String name; StudentHash (int id, String name) { this.id = id; this.name = name; } // Equality based ONLY on id @Override public boolean equals(Object obj) { if (this == obj) return true; if (obj == null || getClass () != obj.getClass ()) return false; StudentHash other = ( StudentHash ) obj; return this.id == other.id; } @Override public int hashCode () { return Objects.hash (id); } public class StudentDemoHash { public static void main(String args []) { HashSet< StudentHash > set = new HashSet<>(); StudentHash s1 = new StudentHash (1, \"Ram\"); StudentHash s2 = new StudentHash (1, \"Ram\"); set.add (s1); set.add (s2); System.out.println ( set.size ()); // Output: 1 } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 53,
+    "keywords": [
+      "string studenthash int",
+      "false studenthash",
+      "return false studenthash",
+      "studenthash int id",
+      "studenthash ram studenthash",
+      "java util hashset",
+      "studenthash studenthash obj",
+      "hashset studenthash s1",
+      "args hashset studenthash",
+      "objects class studenthash"
+    ]
+  },
+  {
+    "chunk_id": "3c256dd9-7f04-4c0b-bba5-e399d511e2f4",
+    "text": "import java.util.ArrayList ; import java.util.HashSet ; public class CopyExample { public static void main(String[] args ) { // Step 1: Create ArrayList ArrayList <String> studentList = new ArrayList <>(); studentList.add (\"Aman\"); studentList.add (\"Riya\"); studentList.add (\"Aman\"); // duplicate studentList.add (\"Karan\"); System.out.println (\" ArrayList :\"); System.out.println ( studentList ); // Step 2: Create HashSet HashSet<String> studentSet = new HashSet<>(); // Step 3: Copy using addAll () studentSet.addAll ( studentList ); System.out.println (\"HashSet:\"); System.out.println ( studentSet ); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 54,
+    "keywords": [
+      "println studentset",
+      "duplicate studentlist add",
+      "arraylist import java",
+      "java util arraylist",
+      "duplicate studentlist",
+      "aman duplicate studentlist",
+      "java util hashset",
+      "studentset new hashset",
+      "hashset string studentset",
+      "arraylist string studentlist"
+    ]
+  },
+  {
+    "chunk_id": "42dad7a2-b378-414e-b752-f5e267ca217c",
+    "text": "Multi Level Inheritance",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 56,
+    "keywords": []
+  },
+  {
+    "chunk_id": "e4c022b5-43d3-442e-9d59-e4904184bd50",
+    "text": "Super this",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 59,
+    "keywords": []
+  },
+  {
+    "chunk_id": "6597bd82-f03e-450b-8ac7-ba752754422f",
+    "text": "Multi Level Inheritance A manufacturing company wants to design a simple system to represent different roles of individuals working in the organization. Every individual in the company is first considered a Person . Some persons work as Factory Workers . Some persons work as Managers . Among managers, a few are promoted to Directors . Each class must define a parameterized constructor to initialize its instance variables. Subclasses must invoke the parent class constructor using the super keyword. Use the this keyword to assign values to instance variables within constructors. Define a method named introduceRole () in the base class. All subclasses must override the introduceRole () method to reflect role-specific behavior. In the main method, create objects using a Person reference to demonstrate runtime polymorphism",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 60,
+    "keywords": [
+      "base class",
+      "base class subclasses",
+      "roles individuals working",
+      "roles individuals",
+      "inheritance manufacturing company",
+      "method reflect role",
+      "override introducerole method",
+      "method named introducerole",
+      "parent class constructor",
+      "level inheritance manufacturing"
+    ]
+  },
+  {
+    "chunk_id": "dd31e0f6-b0f1-435a-af79-3decd2aaeeb1",
+    "text": "Class: Person Type: Base Class Variables: name (String) age (int) Methods: Constructor to initialize variables introduceRole () Class: FactoryWorker Extends: Person Additional Variable: shift (String) Methods: Constructor (initialize all variables) Override introduceRole () Class: Manager Extends: Person Additional Variable: department (String) Methods: Constructor (initialize all variables) Override introduceRole () Class: Director Extends: Manager Additional Variable: annualBonus (double) Methods: Constructor (initialize all variables) Override introduceRole ()",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 61,
+    "keywords": [
+      "manager extends person",
+      "type base class",
+      "class director",
+      "factoryworker extends",
+      "class variables",
+      "initialize variables introducerole",
+      "variables override introducerole",
+      "variables introducerole",
+      "class factoryworker",
+      "factoryworker extends person"
+    ]
+  },
+  {
+    "chunk_id": "f8a39902-14af-4c25-a433-aceaceee24a0",
+    "text": "// Base Class abstract class Person { protected String name; protected int age; public Person(String name, int age) { } public abstract void introduceRole (); } // First Level Specialization class FactoryWorker extends Person { private String shift; public FactoryWorker (String name, int age, String shift) { } @Override public void introduceRole () { } } // First Level Specialization class Manager extends Person { protected String department; public Manager(String name, int age, String department) { } @Override public void introduceRole () { } } // Multilevel Specialization class Director extends Manager { private double annualBonus ; public Director(String name, int age, String department, double annualBonus ) { } @Override public void introduceRole () { } } // Driver Class public class OrganizationalRoleDemo { public static void main(String[] args ) { Person p1 = new FactoryWorker (...); Person p2 = new Manager(...); Person p3 = new Director(...); p1.introduceRole(); p2.introduceRole(); p3.introduceRole(); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 62,
+    "keywords": [
+      "introducerole multilevel",
+      "base class",
+      "class director extends",
+      "specialization",
+      "class manager extends",
+      "level specialization",
+      "void introducerole multilevel",
+      "factoryworker extends",
+      "multilevel specialization",
+      "factoryworker extends person"
+    ]
+  },
+  {
+    "chunk_id": "8c812ece-b841-4b0f-a8f6-54d3f14f4e36",
+    "text": "abstract class Person { protected String name; protected int age; // Constructor public Person(String name, int age) { this.name = name; // using this this.age = age; System. out .println (\"Person constructor executed\"); } // Abstract method (forces overriding) public abstract void introduceRole (); }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 63,
+    "keywords": [
+      "constructor executed",
+      "public abstract",
+      "age constructor public",
+      "void introducerole",
+      "person constructor",
+      "executed abstract",
+      "overriding public abstract",
+      "abstract method",
+      "abstract void introducerole",
+      "println person constructor"
+    ]
+  },
+  {
+    "chunk_id": "668d21ad-6372-4dc6-84d4-f10e4658eaf9",
+    "text": "class FactoryWorker extends Person { private String shift; // Constructor public FactoryWorker (String name, int age, String shift) { super (name, age); // calling parent constructor this .shift = shift; // using this System. out .println (\" FactoryWorker constructor executed\"); } @ Override public void introduceRole () { System. out .println (\"I am \" + name + \", a Factory Worker working in the \" + shift + \" shift.\"); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 64,
+    "keywords": [
+      "factory worker working",
+      "factoryworker string",
+      "parent constructor shift",
+      "factoryworker string int",
+      "factory worker",
+      "introducerole println",
+      "constructor public factoryworker",
+      "void introducerole println",
+      "introducerole println factory",
+      "factoryworker extends person"
+    ]
+  },
+  {
+    "chunk_id": "da3343be-3613-464b-9822-84271a564a3b",
+    "text": "class Manager extends Person { protected String department; // Constructor public Manager(String name, int age, String department) { super(name, age); // calling parent constructor this.department = department; System. out .println (\"Manager constructor executed\"); } @Override public void introduceRole () { System. out .println (\"I am \" + name + \", managing the \" + department + \" department.\"); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 65,
+    "keywords": [
+      "constructor department department",
+      "manager extends",
+      "department println manager",
+      "calling parent constructor",
+      "parent constructor",
+      "introducerole println managing",
+      "manager extends person",
+      "string department constructor",
+      "class manager extends",
+      "void introducerole println"
+    ]
+  },
+  {
+    "chunk_id": "18a298a4-b699-4b50-bffa-46405185cb0c",
+    "text": "class Director extends Manager { private double annualBonus ; // Constructor public Director(String name, int age, String department, double annualBonus ) { super(name, age, department); // calling Manager constructor this.annualBonus = annualBonus ; System. out .println (\"Director constructor executed\"); } @Override public void introduceRole () { System. out .println (\"I am \" + name + \", Director of \" + department + \" department with an annual bonus of \" + annualBonus + \".\"); } }",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 66,
+    "keywords": [
+      "director constructor",
+      "extends manager private",
+      "manager private double",
+      "director department department",
+      "class director extends",
+      "introducerole println",
+      "department double annualbonus",
+      "calling manager constructor",
+      "annualbonus println director",
+      "void introducerole println"
+    ]
+  },
+  {
+    "chunk_id": "f5dbda53-c8ae-439f-8e99-169165f88917",
+    "text": "Abstraction Can we create an object of Person if it is declared as abstract? Why? What happens if I remove abstract from introduceRole () in Person but still override it in subclasses? If I remove the abstract keyword from the class but keep the abstract method inside it, what happens? Constructor & Inheritance If I create a Director object, what will be the exact print order? Why does the parent constructor execute before the child constructor? What happens if I try to place super(...) after another statement inside the constructor? Polymorphism: If I remove the overridden method from Director, which method will execute? Encapsulation: What happens if I make all variables public? If I make introduceRole () private in Person, can subclasses override it? If I make introduceRole () final in Person, what happens?",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 68,
+    "keywords": [
+      "abstract happens",
+      "constructor polymorphism",
+      "introducerole person override",
+      "constructor inheritance create",
+      "remove abstract introducerole",
+      "private person subclasses",
+      "keyword class abstract",
+      "person override subclasses",
+      "abstract method inside",
+      "does parent constructor"
+    ]
+  },
+  {
+    "chunk_id": "568f1170-6dc7-4a75-beb4-0c2379f1e7a8",
+    "text": "Main Method Requirements Create objects using Person reference: Person p1 = new FactoryWorker (\" ravi kumar \", 28, \"Night Shift\"); Person p2 = new Manager(\" anita sharma \", 40, \"Production Planning\"); Person p3 = new Director(\" mohit verma \", 52, \"Corporate Strategy\", 750000); p1.introduceRole(); p2.introduceRole(); p3.introduceRole();",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 70,
+    "keywords": [
+      "method requirements",
+      "objects using",
+      "introducerole p2 introducerole",
+      "p1 new factoryworker",
+      "person reference person",
+      "introducerole p3 introducerole",
+      "using person reference",
+      "factoryworker ravi kumar",
+      "production planning person",
+      "requirements create objects"
+    ]
+  },
+  {
+    "chunk_id": "055dac1f-9448-4dcb-ad0c-69687436a604",
+    "text": "Backup",
+    "source_file": "7a7bc8d45b9a4057be1e81c6bfc413e5_2.1_1044_Constructor_MultiArray.pptx",
+    "page_number": 71,
+    "keywords": []
+  },
+  {
+    "chunk_id": "14460789-1157-4890-a6d6-d7e94c36d050",
+    "text": "class Phone { String brand = \"Samsung\"; class Battery { void show() { System.out.println (\"Battery of \" + brand); } } public static void main(String[] args ) { Phone p = new Phone(); Phone.Battery b = p.new Battery(); b.show (); } } Member Inner Class",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 4,
+    "keywords": [
+      "println battery brand",
+      "void println",
+      "battery member",
+      "new battery member",
+      "println",
+      "member inner",
+      "brand samsung class",
+      "samsung class",
+      "class phone string",
+      "inner class"
+    ]
+  },
+  {
+    "chunk_id": "fd99922c-89d0-4154-bb4b-4e5484d8a135",
+    "text": "class Phone { static String type = \"Smartphone\"; static class SIM { void show() { System.out.println (\"Type: \" + type); } } public static void main(String[] args ) { Phone.SIM s = new Phone.SIM (); // no outer object needed s.show (); } } Static Nested Class",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 5,
+    "keywords": [
+      "println type",
+      "println type type",
+      "type smartphone static",
+      "phone static string",
+      "sim outer object",
+      "class phone",
+      "sim void println",
+      "type public static",
+      "needed static nested",
+      "nested class"
+    ]
+  },
+  {
+    "chunk_id": "287ddbe1-0487-4442-b32c-dcc30ae6f674",
+    "text": "class Phone { void start() { class Screen { void show() { System.out.println (\"Screen ON\"); } } Screen s = new Screen(); // only inside this method s.show (); } public static void main(String[] args ) { Phone p = new Phone(); p.start (); } } Local Inner Class",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 6,
+    "keywords": [
+      "class",
+      "new screen inside",
+      "start local inner",
+      "inside method",
+      "inside method public",
+      "println screen screen",
+      "class phone",
+      "void start class",
+      "println screen",
+      "class phone void"
+    ]
+  },
+  {
+    "chunk_id": "02b7b6e4-70bb-4fee-8d23-0b69ec2fd1c8",
+    "text": "class Phone { public static void main(String[] args ) { Runnable r = new Runnable() { public void run() { System.out.println (\"Phone ringing\"); } }; r.run (); } } Anonymous Inner Class",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 7,
+    "keywords": [
+      "run anonymous",
+      "phone public static",
+      "anonymous inner",
+      "println phone",
+      "inner class",
+      "void run println",
+      "class phone",
+      "phone ringing run",
+      "string args runnable",
+      "runnable new runnable"
+    ]
+  },
+  {
+    "chunk_id": "062c54cd-4489-41b8-a3a2-391a0f37bf47",
+    "text": "______ nested classes are called inner classes. A) Static B) Abstract C) Non-static D) Final To create an object of a member inner class: A) new Outer.Inner () B) Outer.Inner obj = new Inner(); C) Outer.Inner obj = outerObj.new Inner(); D) new Inner(); A static nested class: A) Requires outer class object B) Can access only static members of outer class C) Cannot be instantiated D) Must be private A local inner class is declared: A) Inside another class B) Inside a method C) Inside a package D) Inside interface only",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 8,
+    "keywords": [
+      "classes static",
+      "member inner class",
+      "local inner class",
+      "outer class object",
+      "inner class new",
+      "declared inside class",
+      "inner static nested",
+      "nested classes called",
+      "outer class instantiated",
+      "______ nested classes"
+    ]
+  },
+  {
+    "chunk_id": "afb8c40e-61f0-47a9-9d0c-20868b148ec1",
+    "text": "Anonymous inner class: A) Has no name B) Cannot implement interfaces C) Cannot override methods D) Must be static Anonymous inner class is generally used to: A) Create reusable components B) Override a method once C) Extend multiple classes D) Replace abstract class completely Which of the following requires an outer class object? A) Static nested class B) Anonymous class C) Member inner class D) Interface Which nested class cannot be accessed outside the method in which it is declared? A) Static nested class B) Member inner class C) Local inner class D) Anonymous class",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 9,
+    "keywords": [
+      "outer class",
+      "class local inner",
+      "outer class object",
+      "methods static anonymous",
+      "static nested class",
+      "static anonymous inner",
+      "class anonymous",
+      "inner class interface",
+      "anonymous class",
+      "inner class implement"
+    ]
+  },
+  {
+    "chunk_id": "069ab706-d7b2-4325-8fdb-7e9ca11dbcb7",
+    "text": "Explain and provide examples of the following types of nested classes in Java: Member Inner Class Anonymous Inner Class Local Inner Class Static Nested Class For each type, explain its characteristics, how it can access the outer class s members, and provide a short code snippet demonstrating its usage. Discuss the key differences between static and non-static nested classes.",
+    "source_file": "6f3c62f7739e4f6cb00bab484a013ec4_3_1044_NestedClasses.pptx",
+    "page_number": 10,
+    "keywords": [
+      "class type explain",
+      "anonymous inner class",
+      "static nested",
+      "class anonymous inner",
+      "non static nested",
+      "classes java member",
+      "classes java",
+      "nested classes",
+      "types nested classes",
+      "java member inner"
+    ]
   }
 ]

@@ -1,0 +1,9 @@
+backend/.env
+backend/__pycache__/
+*.bin
+*.json
+*.csv
+*.log
+uploads/
+!backend/faiss_meta.json
+!evaluation/dataset.json
