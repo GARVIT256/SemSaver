@@ -7,6 +7,7 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 from pptx import Presentation
+import docx  # python-docx
 
 
 def extract_pdf(file_path: str) -> list[dict]:
@@ -38,6 +39,26 @@ def extract_pptx(file_path: str) -> list[dict]:
     return pages
 
 
+def extract_docx(file_path: str) -> list[dict]:
+    """Extract text paragraph-by-paragraph from a DOCX."""
+    pages = []
+    doc = docx.Document(file_path)
+    # Treat the whole document as page 1 for now, or split by some delimiter if needed
+    text = "\n".join(para.text for para in doc.paragraphs if para.text.strip())
+    if text:
+        pages.append({"text": text, "page_number": 1})
+    return pages
+
+
+def extract_txt(file_path: str) -> list[dict]:
+    """Extract text from a plain TXT file."""
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        text = f.read().strip()
+    if text:
+        return [{"text": text, "page_number": 1}]
+    return []
+
+
 def extract(file_path: str) -> list[dict]:
     """Dispatch to the right extractor based on file extension."""
     ext = Path(file_path).suffix.lower()
@@ -45,6 +66,10 @@ def extract(file_path: str) -> list[dict]:
         return extract_pdf(file_path)
     elif ext in (".pptx", ".ppt"):
         return extract_pptx(file_path)
+    elif ext == ".docx":
+        return extract_docx(file_path)
+    elif ext == ".txt":
+        return extract_txt(file_path)
     else:
         raise ValueError(f"Unsupported file type: {ext}")
 

@@ -67,11 +67,13 @@ async def verify_api_key(x_api_key: str = Header(default="")) -> None:
 
 # ── File upload validation ────────────────────────────────────────────────────
 
-ALLOWED_EXTENSIONS = {".pdf", ".pptx", ".ppt"}
+ALLOWED_EXTENSIONS = {".pdf", ".pptx", ".ppt", ".docx", ".txt"}
 ALLOWED_MIME_TYPES = {
     "application/pdf",
     "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "application/vnd.ms-powerpoint",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "text/plain",
 }
 
 

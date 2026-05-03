@@ -22,6 +22,7 @@ class Settings:
     NEO4J_URI: str = os.getenv("NEO4J_URI", "bolt://localhost:7687")
     NEO4J_USER: str = os.getenv("NEO4J_USER", "neo4j")
     NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "password")
+    NEO4J_DATABASE: str = os.getenv("NEO4J_DATABASE", "neo4j")
 
     # ── Storage paths ─────────────────────────────────────────────────────
     UPLOAD_DIR: str = os.getenv("UPLOAD_DIR", "../uploads")
@@ -37,6 +38,20 @@ class Settings:
     CHUNK_OVERLAP: int = int(os.getenv("CHUNK_OVERLAP", "100"))  # words overlap
     TOP_K_KEYWORDS: int = int(os.getenv("TOP_K_KEYWORDS", "10"))
     TOP_K_VECTOR: int = int(os.getenv("TOP_K_VECTOR", "5"))
+
+    # ── Improvement A: Cross-Encoder Reranker ─────────────────────────────
+    RERANKER_MODEL: str = os.getenv("RERANKER_MODEL", "BAAI/bge-reranker-base")
+    RERANKER_ENABLED: bool = os.getenv("RERANKER_ENABLED", "true").lower() == "true"
+
+    # ── Improvement B: Query Expansion ────────────────────────────────────
+    QUERY_EXPANSION_ENABLED: bool = os.getenv("QUERY_EXPANSION_ENABLED", "true").lower() == "true"
+    QUERY_EXPANSION_N: int = int(os.getenv("QUERY_EXPANSION_N", "3"))
+
+    # ── Improvement C: Small-to-Big Window ────────────────────────────────
+    WINDOW_SIZE: int = int(os.getenv("WINDOW_SIZE", "1"))  # neighboring pages
+
+    # ── Improvement E: Graph Context (always inject related concepts) ──────
+    GRAPH_ALWAYS_INJECT: bool = os.getenv("GRAPH_ALWAYS_INJECT", "true").lower() == "true"
 
     # ── Security ──────────────────────────────────────────────────────────
     # X-Api-Key header value required on /upload and /chat.

@@ -1,10 +1,34 @@
+# Environment & Secrets
 backend/.env
-backend/__pycache__/
-*.bin
-*.log
-uploads/
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 .venv/
 venv/
+ENV/
+
+# Node.js
 node_modules/
 dist/
 build/
+.npm
+
+# Vector Store & Logs
+*.bin
+faiss_meta.json
+*.log
+backend/backend.log
+evaluation/eval.log
+
+# Uploads & Temp Files
+uploads/
+evaluation/enhanced_results.json
+evaluation/results.json
+evaluation/results.csv
+evaluation/report.html
+.DS_Store
+Thumbs.db

@@ -1,50 +1,37 @@
-import React, { useState } from "react";
-import Upload from "./Upload";
-import Chat from "./Chat";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import ChatWindow from './components/Chat/ChatWindow';
+import UploadPanel from './components/Upload/UploadPanel';
+import AdminDashboard from './components/Dashboard/AdminDashboard';
 
-export default function App() {
-  const [activeTab, setActiveTab] = useState("upload");
-
+function App() {
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100">
-      {/* Header */}
-      <header className="bg-gray-900 border-b border-gray-800 px-6 py-4 flex items-center gap-3 shadow-lg">
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center">
-          <span className="text-white font-bold text-sm">S</span>
+    <Router>
+      <div className="flex bg-surface-container-lowest min-h-screen text-on-surface">
+        {/* Ambient Background Lighting */}
+        <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+          <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-primary/5 blur-[120px]"></div>
+          <div className="absolute bottom-[-10%] right-[10%] w-[30vw] h-[30vw] rounded-full bg-secondary-container/10 blur-[100px]"></div>
+          <div className="absolute top-[40%] left-[60%] w-[20vw] h-[20vw] rounded-full bg-tertiary-container/5 blur-[80px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] opacity-30"></div>
         </div>
-        <h1 className="text-xl font-bold text-white tracking-tight">
-          SemSaver
-          <span className="ml-2 text-xs font-normal text-violet-400 bg-violet-900/40 px-2 py-0.5 rounded-full">
-            Phase 1
-          </span>
-        </h1>
-        <p className="ml-auto text-xs text-gray-500 hidden sm:block">
-          AI Study Assistant · Hybrid Graph + Vector RAG
-        </p>
-      </header>
 
-      {/* Tab navigation */}
-      <div className="bg-gray-900 border-b border-gray-800 px-6">
-        <div className="flex gap-1">
-          {["upload", "chat"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-5 py-3 text-sm font-medium capitalize transition-colors border-b-2 ${activeTab === tab
-                  ? "border-violet-500 text-violet-400"
-                  : "border-transparent text-gray-400 hover:text-gray-200"
-                }`}
-            >
-              {tab === "upload" ? "📂 Upload" : "💬 Ask"}
-            </button>
-          ))}
-        </div>
+        <Sidebar />
+        
+        <main className="flex-1 md:ml-[300px] relative z-10 min-h-screen flex flex-col">
+          <Routes>
+            <Route path="/student" element={<ChatWindow />} />
+            <Route path="/professor" element={<UploadPanel />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+            {/* Default Route */}
+            <Route path="/" element={<Navigate to="/student" replace />} />
+            <Route path="*" element={<Navigate to="/student" replace />} />
+          </Routes>
+        </main>
       </div>
-
-      {/* Page content */}
-      <main className="max-w-4xl mx-auto px-4 py-8">
-        {activeTab === "upload" ? <Upload /> : <Chat />}
-      </main>
-    </div>
+    </Router>
   );
 }
+
+export default App;

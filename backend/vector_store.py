@@ -93,6 +93,12 @@ def get_total_chunks() -> int:
     return _index.ntotal if _index is not None else 0
 
 
+def get_all_metadata() -> list[dict]:
+    """Return a shallow copy of all chunk metadata (for window expansion)."""
+    _load_or_create()
+    return list(_metadata)
+
+
 def reset():
     """Delete index and metadata from disk and memory."""
     global _index, _metadata

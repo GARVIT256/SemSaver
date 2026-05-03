@@ -57,6 +57,13 @@ async def lifespan(app: FastAPI):
             "Set API_KEY in .env before deploying to production."
         )
 
+    # Pre-load reranker to avoid first-request latency
+    try:
+        import reranker
+        reranker._get_reranker()
+    except Exception as e:
+        logger.warning(f"Failed to pre-load reranker: {e}")
+
     yield
     graph_store.close_driver()
 
@@ -128,10 +135,6 @@ async def upload_files(
     files: List[UploadFile] = File(...),
     _auth: None = Depends(security.verify_api_key),
 ):
-    # Manual rate-limit check (supports optional slowapi)
-    if _limiter is not None:
-        _limiter.check()  # raises RateLimitExceeded if over limit
-
     if not files:
         raise security.safe_error("No files provided.", 400)
 

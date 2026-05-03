@@ -53,14 +53,18 @@ def upsert_concept(name: str):
 
 
 def upsert_concepts(names: list[str]):
+    """Batch upsert multiple concept names."""
     if not names:
+        return
+    normalized = list({n.strip().lower() for n in names if n.strip()})
+    if not normalized:
         return
     driver = get_driver()
     with driver.session() as s:
-        for name in names:
-            n = name.strip().lower()
-            if n:
-                s.run("MERGE (c:Concept {name: $name})", name=n)
+        s.run(
+            "UNWIND $names AS name MERGE (c:Concept {name: name})",
+            names=normalized,
+        )
 
 
 # ── Relationship upsert ──────────────────────────────────────────────────────
@@ -93,43 +97,88 @@ def _merge_rel(session, from_name: str, to_name: str, rel_type: str):
 
 def build_graph_from_chunks(chunks: list[dict]):
     """
-    Build graph from an ordered list of chunks (same document, ordered by page).
-
-    Rules:
-    1. RELATED_TO  — every pair of keywords within the same chunk
-    2. PREREQUISITE — keywords of chunk[i] → keywords of chunk[i+1]
-    3. PART_OF     — keyword A is a substring of keyword B (A ≠ B)
+    Build graph from an ordered list of chunks using efficient batching.
     """
     if not chunks:
         return
 
     driver = get_driver()
-    all_keywords = []  # list of keyword lists, parallel to chunks
+    all_keywords_per_chunk = []
+    unique_keywords = set()
+
+    for chunk in chunks:
+        kws = [kw.strip().lower() for kw in chunk.get("keywords", []) if kw.strip()]
+        all_keywords_per_chunk.append(kws)
+        unique_keywords.update(kws)
+
+    if not unique_keywords:
+        return
 
     with driver.session() as s:
-        for chunk in chunks:
-            kws = [kw.strip().lower() for kw in chunk.get("keywords", []) if kw.strip()]
-            all_keywords.append(kws)
+        # 0. Batch upsert all concepts first
+        s.run(
+            "UNWIND $names AS name MERGE (:Concept {name: name})",
+            names=list(unique_keywords)
+        )
 
-            # 1. RELATED_TO: co-occurrence within chunk
+        # 1. RELATED_TO: co-occurrence within chunk
+        related_to_pairs = set()
+        for kws in all_keywords_per_chunk:
             for i, kw_a in enumerate(kws):
                 for kw_b in kws[i + 1:]:
-                    _merge_rel(s, kw_a, kw_b, "RELATED_TO")
-                    _merge_rel(s, kw_b, kw_a, "RELATED_TO")  # bidirectional
-
-        # 2. PREREQUISITE: chunk[i] keywords → chunk[i+1] keywords
-        for i in range(len(all_keywords) - 1):
-            for kw_a in all_keywords[i]:
-                for kw_b in all_keywords[i + 1]:
                     if kw_a != kw_b:
-                        _merge_rel(s, kw_a, kw_b, "PREREQUISITE")
+                        # Sort to treat (A, B) and (B, A) as the same for set storage
+                        related_to_pairs.add(tuple(sorted((kw_a, kw_b))))
 
-        # 3. PART_OF: substring containment across all keywords in document
-        flat = list({kw for kws in all_keywords for kw in kws})
-        for i, kw_a in enumerate(flat):
+        if related_to_pairs:
+            s.run(
+                """
+                UNWIND $pairs AS pair
+                MATCH (a:Concept {name: pair[0]})
+                MATCH (b:Concept {name: pair[1]})
+                MERGE (a)-[:RELATED_TO]->(b)
+                MERGE (b)-[:RELATED_TO]->(a)
+                """,
+                pairs=[list(p) for p in related_to_pairs]
+            )
+
+        # 2. PREREQUISITE: chunk[i] keywords -> chunk[i+1] keywords
+        prereq_pairs = set()
+        for i in range(len(all_keywords_per_chunk) - 1):
+            for kw_a in all_keywords_per_chunk[i]:
+                for kw_b in all_keywords_per_chunk[i + 1]:
+                    if kw_a != kw_b:
+                        prereq_pairs.add((kw_a, kw_b))
+
+        if prereq_pairs:
+            s.run(
+                """
+                UNWIND $pairs AS pair
+                MATCH (a:Concept {name: pair[0]})
+                MATCH (b:Concept {name: pair[1]})
+                MERGE (a)-[:PREREQUISITE]->(b)
+                """,
+                pairs=[list(p) for p in prereq_pairs]
+            )
+
+        # 3. PART_OF: substring containment
+        part_of_pairs = []
+        flat = list(unique_keywords)
+        for kw_a in flat:
             for kw_b in flat:
                 if kw_a != kw_b and kw_a in kw_b:
-                    _merge_rel(s, kw_a, kw_b, "PART_OF")
+                    part_of_pairs.append((kw_a, kw_b))
+
+        if part_of_pairs:
+            s.run(
+                """
+                UNWIND $pairs AS pair
+                MATCH (a:Concept {name: pair[0]})
+                MATCH (b:Concept {name: pair[1]})
+                MERGE (a)-[:PART_OF]->(b)
+                """,
+                pairs=[list(p) for p in part_of_pairs]
+            )
 
 
 # ── Graph retrieval ──────────────────────────────────────────────────────────

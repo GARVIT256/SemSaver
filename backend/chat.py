@@ -33,12 +33,11 @@ def _get_groq():
 def _get_gemini():
     global _gemini_client
     if _gemini_client is None:
-        from google import genai
-        _gemini_client = genai.Client(api_key=settings.GEMINI_API_KEY)
+        import google.generativeai as genai
+        genai.configure(api_key=settings.GEMINI_API_KEY)
+        _gemini_client = genai.GenerativeModel(settings.GENERATION_MODEL)
     return _gemini_client
 
-
-# ── Generation ────────────────────────────────────────────────────────────────
 
 def _call_groq(prompt: str) -> str:
     """Call Groq API — primary LLM."""
@@ -53,13 +52,11 @@ def _call_groq(prompt: str) -> str:
 
 
 def _call_gemini(prompt: str) -> str:
-    """Call Gemini API — fallback LLM."""
-    from google.genai import types
-    client = _get_gemini()
-    resp = client.models.generate_content(
-        model=settings.GENERATION_MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(temperature=0.2, max_output_tokens=1024),
+    """Call Gemini API — fallback LLM (using google-generativeai SDK)."""
+    model = _get_gemini()
+    resp = model.generate_content(
+        prompt,
+        generation_config={"temperature": 0.2, "max_output_tokens": 1024}
     )
     return resp.text.strip()
 

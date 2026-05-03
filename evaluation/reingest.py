@@ -50,11 +50,11 @@ def main():
         try:
             result = ingest_file(path)
             summaries = result.get("summaries", [])
-            chunks = sum(s.get("chunks_stored", 0) for s in summaries
+            chunks = sum(s.get("chunks", 0) for s in summaries
                          if isinstance(s, dict))
-            print(f"✅  {chunks} chunks stored")
+            print(f"[OK] {chunks} chunks stored")
         except Exception as exc:
-            print(f"❌  ERROR: {exc}")
+            print(f"[ERROR] {exc}")
         # Small pause between uploads to let embeddings settle
         time.sleep(1)
 

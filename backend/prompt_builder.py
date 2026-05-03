@@ -19,8 +19,8 @@ RULES:
 
 Be concise and direct."""
 
-# Maximum characters of context to pass to the LLM (helps stay within token budgets).
-_MAX_CONTEXT_CHARS = 6_000
+# Maximum characters of context to pass to the LLM (larger due to window expansion).
+_MAX_CONTEXT_CHARS = 10_000
 
 
 def build_prompt(query: str, chunks: list[dict], graph_facts: str = "") -> str:
