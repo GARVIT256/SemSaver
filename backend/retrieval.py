@@ -8,6 +8,7 @@ Improvements applied:
   E. Graph-Augmented      — prerequisites AND related concepts always injected
 """
 import re
+import time
 import logging
 
 from config import settings
@@ -86,18 +87,24 @@ def _get_graph_context(query: str, chunks: list[dict], always_inject: bool = Tru
     graph_path: list[str] = []
     graph_facts_parts: list[str] = []
 
-    # Extract keywords from query + retrieved chunks
-    query_kws = extract_keywords(query, top_n=5)
-    chunk_kws: list[str] = []
-    for chunk in chunks:
-        chunk_kws.extend(chunk.get("keywords", []))
+    try:
+        # Extract keywords from query + retrieved chunks
+        query_kws = extract_keywords(query, top_n=5)
+        chunk_kws: list[str] = []
+        for chunk in chunks:
+            chunk_kws.extend(chunk.get("keywords", []))
 
-    candidates = list({kw.strip().lower() for kw in query_kws + chunk_kws if kw.strip()})[:15]
+        candidates = list({kw.strip().lower() for kw in query_kws + chunk_kws if kw.strip()})[:15]
+        logger.info(f"Graph context: {len(candidates)} candidates identified.")
+    except Exception as e:
+        logger.warning(f"Keyword extraction for graph context failed: {e}")
+        return [], ""
 
     try:
         existing = graph_store.find_existing_concepts(candidates)
+        logger.info(f"Graph context: {len(existing)} existing concepts found in Neo4j.")
     except Exception as e:
-        logger.warning(f"Graph lookup failed: {e}")
+        logger.warning(f"Graph lookup (find_existing_concepts) failed or timed out: {e}")
         return [], ""
 
     if not existing:
@@ -105,17 +112,21 @@ def _get_graph_context(query: str, chunks: list[dict], always_inject: bool = Tru
 
     # E.1  Always retrieve RELATED_TO neighbours for context enrichment
     if always_inject:
-        all_related: set[str] = set()
-        for concept in existing[:5]:
-            try:
-                related = graph_store.get_related(concept, limit=3)
-                all_related.update(related)
-            except Exception:
-                pass
-        if all_related:
-            graph_facts_parts.append(
-                "Related concepts: " + ", ".join(sorted(all_related)[:10])
-            )
+        try:
+            all_related: set[str] = set()
+            for concept in existing[:5]:
+                try:
+                    related = graph_store.get_related(concept, limit=3)
+                    all_related.update(related)
+                except Exception as e:
+                    logger.debug(f"Failed to get related for {concept}: {e}")
+            
+            if all_related:
+                graph_facts_parts.append(
+                    "Related concepts: " + ", ".join(sorted(all_related)[:10])
+                )
+        except Exception as e:
+            logger.warning(f"Related concepts traversal failed: {e}")
 
     # E.2  Follow prerequisite chains
     for concept in existing[:3]:
@@ -158,6 +169,7 @@ def retrieve(query: str) -> dict:
 
     # ── B. Query Expansion ───────────────────────────────────────────────────
     if settings.QUERY_EXPANSION_ENABLED:
+        logger.info("Expanding query...")
         queries = expand_query(query, settings.GROQ_API_KEY, settings.GROQ_MODEL)
     else:
         queries = [query]
@@ -182,15 +194,23 @@ def retrieve(query: str) -> dict:
 
     # ── A. Cross-Encoder Reranking ───────────────────────────────────────────
     if settings.RERANKER_ENABLED:
-        top_chunks = rerank(query, merged_chunks, top_n=settings.TOP_K_VECTOR)
+        try:
+            logger.info(f"Reranking {len(merged_chunks)} candidates...")
+            top_chunks = rerank(query, merged_chunks, top_n=settings.TOP_K_VECTOR)
+            logger.info("Reranking complete.")
+        except Exception as e:
+            logger.warning(f"Reranking stage failed: {e}")
+            top_chunks = merged_chunks[:settings.TOP_K_VECTOR]
     else:
         top_chunks = merged_chunks[:settings.TOP_K_VECTOR]
 
     # ── C. Small-to-Big Window Expansion ────────────────────────────────────
     if settings.WINDOW_SIZE > 0:
         try:
+            logger.info("Expanding context windows...")
             all_meta = vector_store.get_all_metadata()
             expanded_chunks = [_expand_window(c, all_meta, window=settings.WINDOW_SIZE) for c in top_chunks]
+            logger.info("Window expansion complete.")
         except Exception as e:
             logger.warning(f"Window expansion failed ({e}) -- using original chunks.")
             expanded_chunks = top_chunks
@@ -198,13 +218,20 @@ def retrieve(query: str) -> dict:
         expanded_chunks = top_chunks
 
     # ── E. Graph-Augmented Context ───────────────────────────────────────────
-    graph_path, graph_facts = _get_graph_context(
-        query, top_chunks, always_inject=settings.GRAPH_ALWAYS_INJECT
-    )
+    try:
+        logger.info("Retrieving graph context...")
+        graph_path, graph_facts = _get_graph_context(
+            query, top_chunks, always_inject=settings.GRAPH_ALWAYS_INJECT
+        )
+        logger.info(f"Graph retrieval complete. Path length: {len(graph_path)}")
+    except Exception as e:
+        logger.warning(f"Graph context stage failed: {e}")
+        graph_path, graph_facts = [], ""
 
     if graph_path:
         logger.info(f"Graph path: {graph_path}")
 
+    logger.info("Retrieval pipeline finished.")
     return {
         "chunks":      expanded_chunks,
         "graph_path":  graph_path,

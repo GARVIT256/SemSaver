@@ -50,7 +50,7 @@ def _get_model():
         )
         logger.info(
             f"Embedding model ready. "
-            f"Dim={_model.get_sentence_embedding_dimension()}"
+            f"Dim={_model.get_embedding_dimension()}"
         )
     return _model
 
@@ -80,4 +80,4 @@ def embed_query(text: str) -> np.ndarray:
 
 def get_dim() -> int:
     """Return the embedding dimension of the loaded model."""
-    return _get_model().get_sentence_embedding_dimension()
+    return _get_model().get_embedding_dimension()

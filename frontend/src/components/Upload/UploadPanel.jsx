@@ -1,11 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 const UploadPanel = () => {
-  const [files, setFiles] = useState([
-    { name: 'CS101_Syllabus.pdf', size: '1.2 MB', status: 'indexed', progress: 100 },
-    { name: 'Week1_Readings.docx', size: '450 KB', status: 'indexed', progress: 100 },
-    { name: 'Midterm_Review.pptx', size: '4.8 MB', status: 'indexed', progress: 100 },
-  ]);
+  const [files, setFiles] = useState([]);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [currentFileName, setCurrentFileName] = useState('');
@@ -126,9 +122,6 @@ const UploadPanel = () => {
         <div className="lg:col-span-4 glass-panel rounded-xl p-6 flex flex-col">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-xl font-semibold text-on-surface">Processing Queue</h3>
-            <button className="text-on-surface-variant hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm">more_horiz</span>
-            </button>
           </div>
 
           <div className="flex flex-col gap-4 overflow-y-auto max-h-[400px] pr-2">
@@ -180,26 +173,10 @@ const UploadPanel = () => {
         </div>
       </div>
 
-      {/* Material Hub Cards */}
-      <div className="mt-12">
-        <h3 className="text-2xl font-semibold text-on-surface mb-6">Active Knowledge Base</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="glass-panel rounded-xl p-5 hover:border-primary/30 transition-all group">
-            <div className="flex justify-between items-start mb-4">
-              <div className="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center border border-outline-variant/20">
-                <span className="material-symbols-outlined text-secondary-fixed">menu_book</span>
-              </div>
-              <span className="text-[10px] font-bold px-2 py-1 bg-surface-bright rounded text-on-surface-variant uppercase tracking-widest">Course Text</span>
-            </div>
-            <h4 className="text-lg font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">Intro to Neural Networks</h4>
-            <p className="text-sm text-on-surface-variant mb-4">Chapters 1-12 indexed with structural concept mapping.</p>
-            <div className="pt-4 border-t border-outline-variant/20 flex justify-between items-center text-xs text-on-surface-variant">
-              <span>1.2k Queries</span>
-              <span className="text-primary font-bold">Active</span>
-            </div>
-          </div>
-          {/* Add more cards as needed */}
-        </div>
+      {/* Material Hub Placeholder */}
+      <div className="mt-12 opacity-50 grayscale select-none">
+        <h3 className="text-2xl font-semibold text-on-surface mb-6">Historical Archives</h3>
+        <p className="text-sm text-on-surface-variant">Archived materials from previous semesters will appear here.</p>
       </div>
     </div>
   );

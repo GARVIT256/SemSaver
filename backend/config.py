@@ -17,6 +17,10 @@ class Settings:
     # ── LLM: Gemini (fallback if GROQ_API_KEY is not set) ────────────────
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     GENERATION_MODEL: str = os.getenv("GENERATION_MODEL", "gemini-2.0-flash")
+    
+    # ── LLM: OpenAI ─────────────────────────────────────────────────────
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-4o")
 
     # ── Neo4j ─────────────────────────────────────────────────────────────
     NEO4J_URI: str = os.getenv("NEO4J_URI", "bolt://localhost:7687")
@@ -26,8 +30,11 @@ class Settings:
 
     # ── Storage paths ─────────────────────────────────────────────────────
     UPLOAD_DIR: str = os.getenv("UPLOAD_DIR", "../uploads")
-    FAISS_INDEX_PATH: str = os.getenv("FAISS_INDEX_PATH", "faiss_index.bin")
-    FAISS_META_PATH: str = os.getenv("FAISS_META_PATH", "faiss_meta.json")
+    
+    # Use absolute paths for persistence to avoid CWD issues
+    _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    FAISS_INDEX_PATH: str = os.getenv("FAISS_INDEX_PATH") or os.path.join(_BASE_DIR, "faiss_index.bin")
+    FAISS_META_PATH: str = os.getenv("FAISS_META_PATH") or os.path.join(_BASE_DIR, "faiss_meta.json")
 
     # ── Local models (no API calls for embeddings / keywords) ────────────
     EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")

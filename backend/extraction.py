@@ -3,22 +3,39 @@ Text extraction from PDF and PPTX files.
 Returns a list of {text, page_number} dicts per document.
 """
 import re
+import logging
 from pathlib import Path
 
 import fitz  # PyMuPDF
 from pptx import Presentation
 import docx  # python-docx
 
+logger = logging.getLogger(__name__)
+
 
 def extract_pdf(file_path: str) -> list[dict]:
-    """Extract text page-by-page from a PDF."""
+    """Extract text page-by-page from a PDF using robust block-based extraction."""
     pages = []
     doc = fitz.open(file_path)
     for page_num, page in enumerate(doc, start=1):
-        text = page.get_text("text")
-        if text.strip():
+        # "blocks" mode is often better for preserving reading order and 
+        # handling multi-column layouts than simple "text" mode.
+        blocks = page.get_text("blocks")
+        # Block format: (x0, y0, x1, y1, "text", block_no, block_type)
+        # block_type 0 is text, 1 is image.
+        text_parts = []
+        for b in blocks:
+            if b[6] == 0:  # Text block
+                block_text = b[4].strip()
+                if block_text:
+                    text_parts.append(block_text)
+        
+        text = "\n".join(text_parts).strip()
+        if text:
             pages.append({"text": text, "page_number": page_num})
+    
     doc.close()
+    logger.info(f"Extracted {len(pages)} pages from {file_path}")
     return pages
 
 

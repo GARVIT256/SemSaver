@@ -1,57 +1,56 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Sidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
 
-  const menuItems = [
-    { name: 'Study Hub', icon: 'bolt', path: '/student', role: 'student' },
-    { name: 'Professor Portal', icon: 'school', path: '/professor', role: 'professor' },
-    { name: 'Data Lab', icon: 'insights', path: '/admin', role: 'admin' },
-    { name: 'Archives', icon: 'inventory_2', path: '/archives', role: 'student' },
+  const allItems = [
+    { name: 'Study Hub', icon: 'bolt', path: '/student', roles: ['student', 'admin'] },
+    { name: 'Professor Portal', icon: 'school', path: '/professor', roles: ['professor', 'admin'] },
+    { name: 'Data Lab', icon: 'insights', path: '/admin', roles: ['admin'] },
   ];
+
+  const menuItems = allItems.filter(item => item.roles.includes(user?.role));
 
   const isActive = (path) => location.pathname === path;
 
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
+  };
+
   return (
-    <nav className="fixed left-6 top-20 bottom-6 w-64 rounded-2xl border border-white/10 bg-slate-950/20 backdrop-blur-[40px] flex flex-col gap-2 p-4 h-[calc(100vh-104px)] shadow-2xl shadow-blue-500/5 z-40 divide-y divide-white/5 font-inter text-sm font-medium tracking-wide">
+    <nav className="fixed left-6 top-6 bottom-6 w-64 rounded-3xl border border-white/10 bg-slate-950/40 backdrop-blur-[40px] flex flex-col gap-2 p-4 h-[calc(100vh-48px)] shadow-2xl z-40 divide-y divide-white/5 font-inter text-sm font-medium tracking-wide transition-all duration-300">
       {/* Header */}
       <div className="px-2 py-4 pb-6 flex items-center gap-3 border-b border-white/5">
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-container to-secondary-container p-[1px] shadow-lg shadow-primary/20">
-          <div className="w-full h-full rounded-xl bg-surface-container flex items-center justify-center">
-            <span className="material-symbols-outlined text-white">neurology</span>
-          </div>
+        <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
+          <span className="material-symbols-outlined text-on-primary">neurology</span>
         </div>
         <div>
-          <h1 className="text-lg font-bold text-white tracking-tight">SemSaver Pro</h1>
+          <h1 className="text-lg font-bold text-white tracking-tight">SemSaver</h1>
           <div className="flex items-center gap-1.5 mt-0.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.6)]"></span>
-            <span className="text-[11px] text-on-surface-variant uppercase tracking-widest font-semibold">AI Engine Active</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+            <span className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">{user?.role} Mode</span>
           </div>
         </div>
-      </div>
-
-      {/* CTA */}
-      <div className="pt-4 pb-2">
-        <button className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary to-secondary-container text-white font-semibold text-sm hover:opacity-90 hover:shadow-[0_0_15px_rgba(166,200,255,0.3)] transition-all">
-          <span className="material-symbols-outlined text-[18px]">add</span>
-          New Session
-        </button>
       </div>
 
       {/* Main Tabs */}
-      <div className="flex-1 py-2 flex flex-col gap-1">
+      <div className="flex-1 py-6 flex flex-col gap-1.5">
         {menuItems.map((item) => (
           <Link
             key={item.name}
             to={item.path}
-            className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-300 border-l-2 ${
+            className={`flex items-center gap-3 px-4 py-3 rounded-2xl transition-all duration-300 ${
               isActive(item.path)
-                ? 'bg-gradient-to-r from-blue-500/20 to-purple-500/10 text-blue-300 border-blue-400 shadow-[0_0_15px_rgba(79,157,255,0.1)]'
-                : 'text-slate-500 hover:text-slate-300 hover:bg-white/5 hover:translate-x-1 border-transparent'
+                ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
+                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
             }`}
           >
-            <span className="material-symbols-outlined text-[20px]" data-weight={isActive(item.path) ? "fill" : "normal"}>
+            <span className="material-symbols-outlined text-[20px]">
               {item.icon}
             </span>
             <span>{item.name}</span>
@@ -59,13 +58,17 @@ const Sidebar = () => {
         ))}
       </div>
 
-      {/* Footer Tabs */}
-      <div className="pt-2 flex flex-col gap-1 border-t border-white/5 mt-auto">
-        <button className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-500 hover:text-slate-300 hover:bg-white/5 hover:translate-x-1 transition-all duration-300 border-l-2 border-transparent">
-          <span className="material-symbols-outlined text-[20px]">help</span>
-          <span>Help</span>
-        </button>
-        <button className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-500 hover:text-slate-300 hover:bg-white/5 hover:translate-x-1 transition-all duration-300 border-l-2 border-transparent">
+      {/* Footer / User Profile */}
+      <div className="pt-4 flex flex-col gap-2 border-t border-white/5 mt-auto">
+        <div className="px-3 py-3 mb-2 bg-white/5 rounded-2xl overflow-hidden">
+          <p className="text-[10px] text-slate-500 uppercase tracking-tighter mb-1">Logged in as</p>
+          <p className="text-xs text-slate-300 truncate font-mono">{user?.email}</p>
+        </div>
+        
+        <button 
+          onClick={handleLogout}
+          className="flex items-center gap-3 px-4 py-3 rounded-2xl text-red-400 hover:bg-red-500/10 transition-all duration-300"
+        >
           <span className="material-symbols-outlined text-[20px]">logout</span>
           <span>Sign Out</span>
         </button>

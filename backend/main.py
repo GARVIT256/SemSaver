@@ -14,6 +14,8 @@ Security:
   - Safe error responses (no raw stack traces)
 """
 import logging
+import uuid
+import asyncio
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import List
@@ -57,12 +59,23 @@ async def lifespan(app: FastAPI):
             "Set API_KEY in .env before deploying to production."
         )
 
-    # Pre-load reranker to avoid first-request latency
+    # Pre-load embedding model to avoid first-request latency (~40s cold start)
     try:
-        import reranker
-        reranker._get_reranker()
+        import embeddings
+        embeddings._get_model()
+        logger.info("Embedding model pre-loaded successfully.")
     except Exception as e:
-        logger.warning(f"Failed to pre-load reranker: {e}")
+        logger.warning(f"Failed to pre-load embedding model: {e}")
+
+    # Pre-load reranker to avoid first-request latency (only if enabled)
+    if settings.RERANKER_ENABLED:
+        try:
+            import reranker
+            reranker._get_reranker()
+        except Exception as e:
+            logger.warning(f"Failed to pre-load reranker: {e}")
+    else:
+        logger.info("Reranker disabled — skipping pre-load.")
 
     yield
     graph_store.close_driver()
@@ -114,6 +127,16 @@ class UploadResponse(BaseModel):
     summaries: List[dict]
 
 
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+
+class LoginResponse(BaseModel):
+    token: str
+    role: str
+
+
 # ── Routes ────────────────────────────────────────────────────────────────────
 
 @app.get("/health")
@@ -127,6 +150,30 @@ async def health():
         ),
         "auth_enabled": bool(settings.API_KEY),
     }
+
+
+@app.post("/login", response_model=LoginResponse)
+async def login(req: LoginRequest):
+    """
+    Mock login endpoint for demo purposes.
+    """
+    logger.info(f"Login attempt for: {req.email}")
+    email = req.email.lower().strip()
+    password = req.password.strip()
+
+    # Simple mock authentication
+    users = {
+        "student@semsaver.com": {"password": "student123", "role": "student"},
+        "professor@semsaver.com": {"password": "prof123", "role": "professor"},
+        "admin@semsaver.com": {"password": "admin123", "role": "admin"},
+    }
+
+    if email in users and users[email]["password"] == password:
+        # For demo, the token is just a base64-like string
+        token = f"demo_token_{users[email]['role']}_{uuid.uuid4().hex}"
+        return LoginResponse(token=token, role=users[email]["role"])
+    
+    raise security.safe_error("Invalid email or password.", 401)
 
 
 @app.post("/upload", response_model=UploadResponse)
@@ -190,13 +237,15 @@ async def chat_endpoint(
     security.log_request("/chat")
 
     try:
-        result = retrieval.retrieve(query)
+        # OFF-LOAD TO THREAD: prevent blocking the event loop
+        result = await asyncio.to_thread(retrieval.retrieve, query)
     except Exception as e:
         logger.error(f"Retrieval error: {e}")
         raise security.safe_error("Retrieval failed. Please try again.", 500)
 
     try:
-        response = chat.generate_answer(query, result)
+        # OFF-LOAD TO THREAD: prevent blocking the event loop
+        response = await asyncio.to_thread(chat.generate_answer, query, result)
     except Exception as e:
         logger.error(f"Generation error: {e}")
         raise security.safe_error("Answer generation failed. Please try again.", 500)

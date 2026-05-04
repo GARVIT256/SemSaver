@@ -53,6 +53,7 @@ def rerank(query: str, chunks: list[dict], top_n: int = 5) -> list[dict]:
 
     try:
         pairs = [[query, c.get("text", "")] for c in chunks]
+        logger.info(f"Reranker: Predicting scores for {len(pairs)} pairs...")
         # CrossEncoder.predict returns a numpy array of scores
         scores = reranker.predict(pairs)
         if hasattr(scores, "tolist"):

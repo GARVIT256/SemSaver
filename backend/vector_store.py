@@ -32,10 +32,15 @@ def _load_or_create(dim: int = 0):
         logger.info(f"FAISS index created fresh, dim={dim}")
 
 
-def _save():
+def save():
+    """Explicitly commit the in-memory FAISS index and metadata to disk."""
+    if _index is None:
+        logger.warning("FAISS: Nothing to save (index is None).")
+        return
     faiss.write_index(_index, settings.FAISS_INDEX_PATH)
     with open(settings.FAISS_META_PATH, "w", encoding="utf-8") as f:
         json.dump(_metadata, f, ensure_ascii=False, indent=2)
+    logger.info(f"FAISS: Saved index and metadata to disk ({_index.ntotal} vectors).")
 
 
 def add_chunks(chunks: list[dict]):
@@ -64,7 +69,7 @@ def add_chunks(chunks: list[dict]):
 
     _index.add(vectors)
     _metadata.extend(chunks)
-    _save()
+    save()
     logger.info(f"FAISS: added {len(chunks)} chunks → total {_index.ntotal}")
 
 
@@ -94,9 +99,9 @@ def get_total_chunks() -> int:
 
 
 def get_all_metadata() -> list[dict]:
-    """Return a shallow copy of all chunk metadata (for window expansion)."""
+    """Return the in-memory metadata list (already loaded — no disk I/O)."""
     _load_or_create()
-    return list(_metadata)
+    return _metadata
 
 
 def reset():

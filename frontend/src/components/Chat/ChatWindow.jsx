@@ -50,13 +50,18 @@ const ChatWindow = () => {
 
     try {
       setIsTyping(true);
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout
+
       const response = await fetch('http://localhost:8000/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: text })
+        body: JSON.stringify({ query: text }),
+        signal: controller.signal
       });
+      clearTimeout(timeoutId);
 
-      if (!response.ok) throw new Error('Failed to fetch response');
+      if (!response.ok) throw new Error(`Server error: ${response.status}`);
 
       const data = await response.json();
       
@@ -72,9 +77,12 @@ const ChatWindow = () => {
       await simulateStreaming(data.answer, aiResponse);
     } catch (error) {
       console.error('Chat Error:', error);
+      const msg = error.name === 'AbortError'
+        ? "Request timed out after 30s. The backend is overloaded — try again."
+        : "Error connecting to the AI engine. Please ensure the backend server is running.";
       setMessages(prev => [...prev, {
         role: 'assistant',
-        text: "I'm sorry, I encountered an error connecting to the AI engine. Please ensure the backend server is running.",
+        text: `⚠️ ${msg}`,
         confidence: 0,
         sources: []
       }]);
@@ -86,14 +94,10 @@ const ChatWindow = () => {
     <div className="flex-1 flex flex-col h-full relative overflow-hidden">
       {/* Header */}
       <header className="px-8 pb-6 pt-8 max-w-4xl mx-auto w-full flex items-center justify-between z-10">
-        <div className="flex items-center gap-2">
-          <span className="font-inter text-[12px] font-semibold text-primary border border-primary/30 bg-primary/10 px-2 py-1 rounded-md">STUDY HUB</span>
-          <span className="text-on-surface-variant text-sm">Session Context: General Inquiry</span>
+        <div className="flex items-center gap-4">
+          <span className="font-inter text-[12px] font-semibold text-primary border border-primary/30 bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">STUDY HUB</span>
+          <span className="text-on-surface-variant/60 text-xs font-mono uppercase tracking-widest">Active Index: Java_Course_V1</span>
         </div>
-        <button className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 text-sm font-medium">
-          <span className="material-symbols-outlined text-[18px]">tune</span>
-          Parameters
-        </button>
       </header>
 
       {/* Messages Area */}
